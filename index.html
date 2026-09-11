@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#FAFAF7">
+<title>Szóműhely</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<style>
+  :root{
+    --paper:#FAFAF7; --ink:#1F2A2E; --pen:#24457A; --pen-soft:#E4E9F3;
+    --marker:#FFE05C; --muted:#6B7378; --line:#DADDD7; --ok:#2E7D5B; --ok-soft:#E1F0E8;
+    --err:#A33A3A; --err-soft:#F5E3E3;
+    --serif: Georgia, "Iowan Old Style", "Charter", "Times New Roman", serif;
+    --sans: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.45}
+  button,input,textarea{font:inherit;color:inherit}
+  #app{max-width:560px;margin:0 auto;padding:0 18px 120px}
+  .top{position:sticky;top:0;background:var(--paper);padding:14px 0 10px;z-index:5;border-bottom:1px solid var(--line);margin-bottom:18px}
+  .top .row{display:flex;align-items:center;justify-content:space-between;gap:10px}
+  .top .crumb{font-size:14px;color:var(--muted)}
+  .top .crumb b{color:var(--ink);font-weight:600}
+  .back{background:none;border:0;padding:6px 8px 6px 0;color:var(--pen);cursor:pointer}
+  .steps{display:flex;gap:6px;margin-top:10px}
+  .steps i{flex:1;height:4px;border-radius:2px;background:var(--line)}
+  .steps i.on{background:var(--pen)}
+  .steps i.done{background:var(--ok)}
+  h1{font-family:var(--serif);font-weight:400;font-size:34px;line-height:1.1;margin:28px 0 6px}
+  h2{font-size:15px;font-weight:600;color:var(--muted);margin:26px 0 8px}
+  p{margin:8px 0}
+  .lead{color:var(--muted);margin:0 0 6px}
+  .de{font-family:var(--serif)}
+  .excerpt{position:relative;padding:14px 16px 14px 18px;border-left:3px solid var(--line);margin:6px 0 4px}
+  .excerpt .pg{position:absolute;right:0;top:-10px;font-size:12px;color:var(--muted);background:var(--paper);padding:0 4px}
+  .excerpt p{font-family:var(--serif);font-size:20px;line-height:1.55;margin:0}
+  mark{background:var(--marker);color:inherit;padding:0 3px;border-radius:2px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+  .field{margin:16px 0}
+  .field label{display:block;font-size:14px;color:var(--muted);margin-bottom:6px}
+  input[type=text],textarea{width:100%;border:1px solid var(--line);border-radius:8px;padding:12px;background:#fff;outline:none}
+  input[type=text]:focus,textarea:focus{border-color:var(--pen);box-shadow:0 0 0 3px var(--pen-soft)}
+  textarea{min-height:88px;resize:vertical}
+  textarea.de,input.de{font-family:var(--serif);font-size:19px}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid var(--line);background:#fff;border-radius:10px;padding:11px 16px;cursor:pointer}
+  .btn:disabled{opacity:.45;cursor:default}
+  .btn.primary{background:var(--pen);color:#fff;border-color:var(--pen)}
+  .btn.ghost{background:none;border-color:transparent;color:var(--pen);padding-left:0}
+  .btn.small{padding:7px 12px;font-size:15px}
+  .speak{border:1px solid var(--line);background:#fff;border-radius:50%;width:38px;height:38px;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;vertical-align:middle}
+  .actions{position:fixed;left:0;right:0;bottom:0;background:linear-gradient(to top,var(--paper) 70%,rgba(250,250,247,0));padding:14px 18px calc(16px + env(safe-area-inset-bottom));z-index:6}
+  .actions .in{max-width:560px;margin:0 auto;display:flex;gap:10px}
+  .actions .btn{flex:1;padding:15px 16px;font-size:18px}
+  .reveal{margin:18px 0 6px;padding:16px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .reveal .head{font-family:var(--serif);font-size:30px;line-height:1.15;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+  .reveal .forms{color:var(--muted);margin-top:4px}
+  .reveal .hu{font-size:20px;margin-top:8px}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}
+  .chip{border:1px solid var(--line);background:#fff;border-radius:999px;padding:8px 14px;cursor:pointer}
+  .chip.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+  .chip.piece{font-family:var(--serif);font-size:20px;padding:8px 16px}
+  .chip.used{opacity:.25;pointer-events:none}
+  .assembled{font-family:var(--serif);font-size:30px;min-height:44px;margin:6px 0 4px;letter-spacing:.5px}
+  .assembled .slot{color:var(--line)}
+  .assembled.ok{color:var(--ok)}
+  .assembled.bad{color:var(--err)}
+  .note{background:var(--pen-soft);border-radius:8px;padding:10px 12px;font-size:15px;margin:10px 0}
+  .fam{list-style:none;padding:0;margin:6px 0}
+  .fam li{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px dashed var(--line)}
+  .fam li .w{font-family:var(--serif);font-size:19px}
+  .fam li .m{color:var(--muted);text-align:right;font-size:15px}
+  .fam li.known{color:var(--muted)}
+  .fam li.known .w{font-size:17px}
+  .fam li.new{background:var(--marker);margin:0 -8px;padding:8px;border-radius:6px;border-bottom:0}
+  .fam li.new .m{color:var(--ink)}
+  .pair{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:6px 0 14px}
+  .pair>div{padding:10px 12px;border:1px solid var(--line);border-radius:8px}
+  .pair .w{font-family:var(--serif);font-size:20px}
+  .pair .m{color:var(--muted);font-size:14px}
+  .cs{margin:10px 0 14px}
+  .cs .s{font-family:var(--serif);font-size:19px;line-height:1.5}
+  .cs .s .gap{display:inline-block;min-width:60px;border-bottom:2px solid var(--ink);text-align:center}
+  .cs .s .gap.ok{border-color:var(--ok);color:var(--ok)}
+  .cs .s .gap.bad{border-color:var(--err);color:var(--err)}
+  .cs .opts{display:flex;gap:8px;margin-top:8px}
+  .cs .opts .btn{flex:1}
+  .mn{display:block;width:100%;text-align:left;border:1px solid var(--line);background:#fff;border-radius:10px;padding:12px 14px;margin:8px 0;cursor:pointer;line-height:1.4}
+  .mn.on{border-color:var(--ink);box-shadow:inset 0 0 0 1px var(--ink)}
+  .ref{display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid var(--line);margin-bottom:6px}
+  .ref .head{font-family:var(--serif);font-size:22px}
+  .ref .forms{font-size:14px;color:var(--muted)}
+  .batch{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 0;border-bottom:1px solid var(--line)}
+  .batch .t{font-size:19px}
+  .batch .sub{font-size:14px;color:var(--muted);margin-top:2px}
+  .batch .words{font-family:var(--serif);font-size:15px;color:var(--muted);margin-top:4px}
+  .story{font-family:var(--serif);font-size:20px;line-height:1.65;margin:10px 0}
+  .outline{padding-left:22px;margin:8px 0}
+  .outline li{margin:6px 0}
+  .stat{font-size:15px;color:var(--muted)}
+  .ok-text{color:var(--ok)}
+  .menu{margin-top:34px;padding-top:14px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:6px 18px}
+  .hidden{display:none}
+  .check{display:flex;gap:10px;align-items:center;margin:14px 0}
+  @media (prefers-reduced-motion:no-preference){ .chip,.btn,.mn{transition:background .12s,border-color .12s} }
+  @media (min-width:600px){ #app{padding-top:10px} }
+</style>
+</head>
+<body>
+<div id="app"></div>
+
+<script id="chapter-data" type="application/json">/*__CHAPTER__*/null</script>
+<script>
+'use strict';
+
+/* ---------- storage (safe: works without persistence in sandboxed previews) ---------- */
+const mem = {};
+const store = {
+  get(k){ try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : (mem[k] ?? null); } catch(e){ return mem[k] ?? null; } },
+  set(k,v){ mem[k]=v; try { localStorage.setItem(k, JSON.stringify(v)); } catch(e){} },
+  del(k){ delete mem[k]; try { localStorage.removeItem(k); } catch(e){} }
+};
+const K_CH = 'szomuhely:chapter', K_ST = 'szomuhely:state';
+
+/* ---------- state ---------- */
+let chapter = null;
+let state = { chapters: {} };
+let view = { name:'home' };
+let ui = {};              // transient per-screen ui state (assembled pieces etc.)
+
+function cs(){ const id=chapter.chapter.id; state.chapters[id] ??= {words:{}, batches:{}}; return state.chapters[id]; }
+function ws(id){ const c=cs(); c.words[id] ??= {}; return c.words[id]; }
+function bs(i){ const c=cs(); c.batches[i] ??= {}; return c.batches[i]; }
+function save(){ store.set(K_ST, state); }
+function word(id){ return chapter.words.find(w=>w.id===id); }
+
+/* ---------- helpers ---------- */
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function markFirst(text, hl){
+  const t = esc(text), h = esc(hl); const i = t.indexOf(h);
+  return i<0 ? t : t.slice(0,i) + '<mark>'+h+'</mark>' + t.slice(i+h.length);
+}
+function markAll(text, list){
+  let t = esc(text);
+  (list||[]).forEach(h => { const e = esc(h); t = t.split(e).join('<mark>'+e+'</mark>'); });
+  return t;
+}
+function headword(w){
+  if (w.pos==='noun') return `${w.article} ${w.de}/${w.plural}`;
+  if (w.pos==='verb') return `${w.de} (${w.praet}, ${w.perf})`;
+  return w.de;
+}
+function forms(w){
+  if (w.pos==='noun') return w.collocation || '';
+  if (w.pos==='verb') return `${w.praet} · ${w.perf} · ${w.valence}`;
+  return '';
+}
+function speak(text){
+  try { if (!('speechSynthesis' in window)) return;
+    const u = new SpeechSynthesisUtterance(text); u.lang='de-DE'; u.rate=0.92;
+    speechSynthesis.cancel(); speechSynthesis.speak(u);
+  } catch(e){}
+}
+function shuffle(a){ a=a.slice(); for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];} return a; }
+const wordCount = s => (s||'').trim().split(/\s+/).filter(Boolean).length;
+
+function wordDone(id){ const s=ws(id); return !!(s.done); }
+function batchDone(i){ return !!bs(i).done; }
+function batchWordsDone(i){ return chapter.batches[i].words.filter(wordDone).length; }
+function readyWords(){
+  const out=[]; chapter.batches.forEach((b,i)=>{ if(batchDone(i)) b.words.forEach(id=>{ if(wordDone(id)) out.push(id); }); }); return out;
+}
+
+/* ---------- rendering ---------- */
+const app = document.getElementById('app');
+function render(){
+  const v = view.name;
+  app.innerHTML = v==='home' ? renderHome() : v==='word' ? renderWord() : v==='story' ? renderStory() : v==='export' ? renderExport() : '';
+  window.scrollTo(0,0);
+}
+function go(v){ view=v; ui={}; render(); }
+
+/* ----- home ----- */
+function renderHome(){
+  const ready = readyWords().length;
+  const rows = chapter.batches.map((b,i)=>{
+    const n=b.words.length, d=batchWordsDone(i), done=batchDone(i);
+    const sub = done ? '<span class="ok-text">Kész, a szavak Anki-készek</span>'
+              : d===n ? 'A szavak megvannak, a történet van hátra'
+              : d===0 ? `${n} szó` : `${d} / ${n} szó kész`;
+    const label = done ? 'Újranézés' : d===0 ? 'Kezdés' : 'Folytatás';
+    const names = b.words.map(id=>word(id).de).join(' · ');
+    return `<div class="batch">
+      <div><div class="t">${esc(b.title)}</div><div class="sub">${sub}</div><div class="words">${esc(names)}</div></div>
+      <button class="btn small" onclick="startBatch(${i})">${label}</button>
+    </div>`;
+  }).join('');
+  return `
+    <h1>Szóműhely</h1>
+    <p class="lead">${esc(chapter.chapter.title)}</p>
+    <p class="stat">${esc(chapter.chapter.book)}</p>
+    ${rows}
+    <div class="batch" style="border-bottom:0">
+      <div><div class="t">Anki-export</div><div class="sub">${ready ? ready+' szó kész az exportra' : 'Egy kör befejezése után lesz mit exportálni'}</div></div>
+      <button class="btn small primary" ${ready?'':'disabled'} onclick="go({name:'export'})">Exportálás</button>
+    </div>
+    <div class="menu">
+      <button class="btn ghost small" onclick="pickChapter()">Másik fejezet betöltése (JSON)</button>
+      <button class="btn ghost small" onclick="resetProgress()">Haladás törlése</button>
+    </div>
+    <input type="file" id="jsonfile" accept="application/json,.json" class="hidden" onchange="loadChapterFile(this.files[0])">`;
+}
+function startBatch(i){
+  const b = chapter.batches[i];
+  const next = b.words.findIndex(id=>!wordDone(id));
+  if (next<0) go({name:'story', batch:i}); else go({name:'word', batch:i, idx:next, step:0});
+}
+
+/* ----- word workshop ----- */
+const STEP_NAMES = ['Kontextus','Boncolás','Mnemonika','Saját mondat'];
+function topbar(crumb, step, total){
+  const dots = step==null ? '' : `<div class="steps">${Array.from({length:total},(_,k)=>`<i class="${k<step?'done':k===step?'on':''}"></i>`).join('')}</div>`;
+  return `<div class="top"><div class="row"><button class="back" onclick="go({name:'home'})">‹ Fejezet</button><span class="crumb">${crumb}</span></div>${dots}</div>`;
+}
+function renderWord(){
+  const b = chapter.batches[view.batch]; const id = b.words[view.idx]; const w = word(id); const s = ws(id);
+  const crumb = `<b>${view.idx+1}/${b.words.length}</b> · ${STEP_NAMES[view.step]}`;
+  let body='', action='';
+  if (view.step===0){
+    const revealed = !!ui.revealed || s.rating;
+    body = `
+      <div class="excerpt"><span class="pg">${w.context.page}. oldal</span><p>${markFirst(w.context.sentence, w.context.highlight)}</p></div>
+      <div class="field"><label>Mit jelenthet a kiemelt szó? Tippelj a szövegkörnyezetből, mielőtt megnézed.</label>
+        <input type="text" id="guess" value="${esc(s.guess||'')}" placeholder="a tipped magyarul" ${revealed?'disabled':''} oninput="ws('${id}').guess=this.value;save()"></div>
+      ${revealed ? `
+        <div class="reveal"><div class="head">${esc(headword(w))} <button class="speak" onclick="speak('${esc(w.pos==='noun'?w.article+' '+w.de:w.de)}')" aria-label="Kiejtés">🔊</button></div>
+          <div class="forms">${esc(forms(w))}</div><div class="hu">${esc(w.hu)}</div></div>
+        <p class="lead">Mennyire találtad el?</p>
+        <div class="chips">${['Eltaláltam','Közel','Nem'].map(r=>`<button class="chip ${s.rating===r?'on':''}" onclick="rate('${id}','${r}')">${r}</button>`).join('')}</div>` : ''}`;
+    action = revealed
+      ? `<button class="btn primary" ${s.rating?'':'disabled'} onclick="next()">Tovább</button>`
+      : `<button class="btn primary" onclick="reveal()">Felfedés</button>`;
+  }
+  if (view.step===1){
+    ui.pieces ??= shuffle(w.morph.map((p,i)=>i));
+    ui.picked ??= [];
+    const okAssembled = ui.picked.length===w.morph.length && ui.picked.every((p,i)=>p===i);
+    const badAssembled = ui.picked.length===w.morph.length && !okAssembled;
+    const joined = ui.picked.map(i=>w.morph[i].replace(/^-|-$/g,'')).join('');
+    const assembled = (w.pos==='noun' && joined ? joined[0].toUpperCase()+joined.slice(1) : joined) || '<span class="slot">' + w.morph.map(m=>'·'.repeat(Math.max(2,m.replace(/-/g,'').length))).join('') + '</span>';
+    const contrast = w.contrast; ui.answers ??= {};
+    const allAnswered = contrast.items.every((_,k)=>ui.answers[k]!=null);
+    const tName = w.pos==='noun' ? w.de : w.de.split(' ')[0];
+    const cName = contrast.de;
+    body = `
+      <h2>Rakd össze a szót</h2>
+      <div class="assembled ${okAssembled?'ok':badAssembled?'bad':''}">${assembled}</div>
+      <div class="chips">${ui.pieces.map(i=>`<button class="chip piece ${ui.picked.includes(i)?'used':''}" onclick="pick(${i})">${esc(w.morph[i])}</button>`).join('')}
+        ${ui.picked.length?`<button class="chip" onclick="ui.picked=[];render()">↺</button>`:''}</div>
+      ${okAssembled && w.morphNote ? `<div class="note">${esc(w.morphNote)}</div>` : ''}
+      <h2>Szócsalád — hova tartozik</h2>
+      <ul class="fam">
+        ${w.family.map(f=>`<li class="${f.known?'known':''}"><span class="w">${esc(f.de)}</span><span class="m">${f.known?'✓ ':''}${esc(f.hu)}</span></li>`).join('')}
+        <li class="new"><span class="w">${esc(w.pos==='noun'?w.article+' '+w.de:w.de)}</span><span class="m">${esc(w.hu)}</span></li>
+      </ul>
+      <h2>Melyik illik ide?</h2>
+      <div class="pair"><div><div class="w">${esc(w.pos==='noun'?w.article+' '+w.de:w.de)}</div><div class="m">${esc(w.hu)}</div></div>
+        <div><div class="w">${esc(contrast.article?contrast.article+' '+contrast.de:contrast.de)}</div><div class="m">${esc(contrast.hu)}</div></div></div>
+      ${contrast.items.map((it,k)=>{
+        const a = ui.answers[k]; const correct = a==null ? null : a===it.answer;
+        const fill = a==null ? '___' : correct ? (it.form || (it.answer==='target'?tName:cName)) : (a==='target'?tName:cName);
+        const gapCls = correct==null?'':correct?'ok':'bad';
+        const parts = esc(it.sentence).split('___');
+        const sent = parts.length===3
+          ? parts[0] + `<span class="gap ${gapCls}">${a==null?'&nbsp;':esc(fill.split(' … ')[0])}</span>` + parts[1] + `<span class="gap ${gapCls}">${a==null?'&nbsp;':esc(fill.split(' … ')[1]||'')}</span>` + parts[2]
+          : parts[0] + `<span class="gap ${gapCls}">${a==null?'&nbsp;':esc(fill)}</span>` + (parts[1]||'');
+        return `<div class="cs"><div class="s">${sent}</div>
+          <div class="opts"><button class="btn small ${a==='target'?(correct?'primary':''):''}" ${a!=null?'disabled':''} onclick="answer(${k},'target')">${esc(tName)}</button>
+          <button class="btn small ${a==='contrast'?(correct?'primary':''):''}" ${a!=null?'disabled':''} onclick="answer(${k},'contrast')">${esc(cName)}</button></div></div>`;
+      }).join('')}
+      ${allAnswered ? `<div class="note">${esc(contrast.note)}</div>` : ''}`;
+    action = `<button class="btn primary" ${okAssembled&&allAnswered?'':'disabled'} onclick="next()">Tovább</button>`;
+  }
+  if (view.step===2){
+    const chosen = s.mnemonic;
+    body = `
+      <h2>Válassz egy kapaszkodót, vagy írj sajátot</h2>
+      ${w.mnemonics.map(m=>`<button class="mn ${chosen===m?'on':''}" onclick="chooseMn('${id}',${JSON.stringify(m).replace(/"/g,'&quot;')})">${esc(m)}</button>`).join('')}
+      <div class="field"><label>Saját kapaszkodó (a saját mindig jobban rögzül)</label>
+        <textarea id="ownmn" oninput="ownMn('${id}',this.value)">${esc(s.ownMnemonic||'')}</textarea></div>`;
+    action = `<button class="btn primary" ${(s.mnemonic||wordCount(s.ownMnemonic)>0)?'':'disabled'} onclick="next()">Tovább</button>`;
+  }
+  if (view.step===3){
+    body = `
+      <div class="ref"><button class="speak" onclick="speak('${esc(w.pos==='noun'?w.article+' '+w.de:w.de)}')">🔊</button>
+        <div><div class="head">${esc(headword(w))}</div><div class="forms">${esc(forms(w))}</div></div></div>
+      <p class="lead">Egy mondat a saját életedből vagy a kutatásodból — nem a könyvből. Ez lesz a kártyád.</p>
+      <div class="field"><label>Előbb magyarul</label>
+        <textarea id="hu" oninput="ws('${id}').huSent=this.value;save();syncAction()">${esc(s.huSent||'')}</textarea></div>
+      <div class="field"><label>Aztán németül</label>
+        <textarea id="de" class="de" lang="de" oninput="ws('${id}').deSent=this.value;save();syncAction()">${esc(s.deSent||'')}</textarea></div>`;
+    action = `<button id="finish" class="btn primary" ${(wordCount(s.huSent)>=2&&wordCount(s.deSent)>=2)?'':'disabled'} onclick="finishWord()">Kész, jöhet a következő</button>`;
+  }
+  return topbar(crumb, view.step, 4) + body + `<div class="actions"><div class="in">${action}</div></div>`;
+}
+function syncAction(){ const b=chapter.batches[view.batch]; const s=ws(b.words[view.idx]); const f=document.getElementById('finish'); if(f) f.disabled = !(wordCount(s.huSent)>=2&&wordCount(s.deSent)>=2); }
+function reveal(){ ui.revealed=true; render(); }
+function rate(id,r){ ws(id).rating=r; save(); render(); }
+function pick(i){ if(ui.picked.includes(i)) return; ui.picked.push(i); render(); }
+function answer(k,a){ ui.answers[k]=a; render(); }
+function chooseMn(id,m){ const s=ws(id); s.mnemonic = s.mnemonic===m ? null : m; save(); render(); }
+function ownMn(id,v){ const s=ws(id); s.ownMnemonic=v; if(v.trim()) s.mnemonic=null; save(); const btn=document.querySelector('.actions .btn'); if(btn) btn.disabled = !(s.mnemonic||wordCount(v)>0); document.querySelectorAll('.mn').forEach(el=>el.classList.remove('on')); }
+function next(){ view.step++; ui={}; render(); }
+function finishWord(){
+  const b = chapter.batches[view.batch]; const id=b.words[view.idx];
+  const s=ws(id); s.done=true; s.doneAt=Date.now(); save();
+  const nxt = b.words.findIndex(w=>!wordDone(w));
+  if (nxt<0) go({name:'story', batch:view.batch}); else go({name:'word', batch:view.batch, idx:nxt, step:0});
+}
+
+/* ----- story ----- */
+function renderStory(){
+  const b = chapter.batches[view.batch]; const st = b.story; const s = bs(view.batch);
+  const flipped = !!ui.flipped;
+  const body = !flipped ? `
+      <h2>A kör története — olvasd el, hallgasd meg</h2>
+      <p class="story">${markAll(st.de, st.highlights)} <button class="speak" onclick="speak(${JSON.stringify(st.de).replace(/"/g,'&quot;')})">🔊</button></p>`
+    : `
+      <h2>Meséld vissza németül a vázlat alapján</h2>
+      <ol class="outline">${st.hu_outline.map(l=>`<li>${esc(l)}</li>`).join('')}</ol>
+      <div class="field"><label>Írd le röviden (vagy mondd el hangosan, és jelöld késznek)</label>
+        <textarea class="de" lang="de" oninput="bs(${view.batch}).retell=this.value;save()">${esc(s.retell||'')}</textarea></div>
+      <button class="btn ghost small" onclick="ui.flipped=false;render()">Mutasd újra a történetet</button>`;
+  const action = !flipped
+    ? `<button class="btn primary" onclick="ui.flipped=true;render()">Elolvastam, jöhet a vázlat</button>`
+    : `<button class="btn primary" onclick="finishBatch()">${s.done?'Vissza a fejezethez':'Kör kész'}</button>`;
+  return topbar(`<b>${esc(b.title)}</b> · Történet`, null, 0) + body + `<div class="actions"><div class="in">${action}</div></div>`;
+}
+function finishBatch(){ const s=bs(view.batch); s.done=true; s.doneAt=Date.now(); save(); go({name:'home'}); }
+
+/* ----- export ----- */
+function renderExport(){
+  const ids = readyWords();
+  const notYet = ids.filter(id=>!ws(id).exportedAt);
+  ui.includeMn ??= true; ui.onlyNew ??= (notYet.length>0 && notYet.length<ids.length);
+  const list = (ui.onlyNew?notYet:ids).map(id=>{ const w=word(id); return `<li><span class="w">${esc(headword(w))}</span><span class="m">${esc(w.subdeck)}${ws(id).exportedAt?' · már exportálva':''}</span></li>`; }).join('');
+  const canShare = !!(navigator.share && navigator.canShare);
+  return topbar('<b>Anki-export</b>', null, 0) + `
+    <p class="lead">Egy tabulátorral tagolt fájl készül. Az AnkiDroidban: Importálás → válaszd ki a fájlt. A pakli oszlopból mennek a szavak a ${esc(chapter.chapter.deck)}::Fachwortschatz és ::Allgemein alpaklikba.</p>
+    <label class="check"><input type="checkbox" ${ui.includeMn?'checked':''} onchange="ui.includeMn=this.checked"> Kapaszkodó (mnemonika) a hátlapra</label>
+    ${ids.length!==notYet.length && notYet.length ? `<label class="check"><input type="checkbox" ${ui.onlyNew?'checked':''} onchange="ui.onlyNew=this.checked;render()"> Csak a még nem exportáltak</label>` : ''}
+    <ul class="fam">${list}</ul>
+    <div class="actions"><div class="in">
+      ${canShare?`<button class="btn" onclick="doExport(true)">Megosztás</button>`:''}
+      <button class="btn primary" onclick="doExport(false)">Letöltés</button></div></div>`;
+}
+function buildTSV(ids){
+  const deck = chapter.chapter.deck;
+  const rows = ids.map(id=>{
+    const w=word(id), s=ws(id);
+    const mn = s.mnemonic || (s.ownMnemonic||'').trim();
+    const front = `${w.hu}<br>${(s.huSent||'').trim()}`;
+    let back = `${headword(w)}${w.pos==='verb'?' – '+w.valence:''}<br>${(s.deSent||'').trim()}`;
+    if (ui.includeMn && mn) back += `<br><i>${mn}</i>`;
+    const clean = t => t.replace(/\t/g,' ').replace(/\r?\n/g,'<br>');
+    return [clean(front), clean(back), `${deck}::${w.subdeck}`, chapter.chapter.id].join('\t');
+  });
+  return ['#separator:tab','#html:true','#deck column:3','#tags column:4', ...rows].join('\n') + '\n';
+}
+async function doExport(share){
+  const all = readyWords(); const ids = ui.onlyNew ? all.filter(id=>!ws(id).exportedAt) : all;
+  if(!ids.length) return;
+  const tsv = buildTSV(ids); const name = `${chapter.chapter.id}-anki.txt`;
+  const file = new File([tsv], name, {type:'text/plain'});
+  let ok=false;
+  if (share){ try { if(navigator.canShare({files:[file]})){ await navigator.share({files:[file], title:'Anki-import'}); ok=true; } } catch(e){} }
+  if (!ok){
+    const url = URL.createObjectURL(file); const a=document.createElement('a'); a.href=url; a.download=name; document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(()=>URL.revokeObjectURL(url), 2000); ok=true;
+  }
+  if (ok){ ids.forEach(id=>{ ws(id).exportedAt=Date.now(); }); save(); render(); }
+}
+
+/* ----- chapter loading ----- */
+function pickChapter(){ document.getElementById('jsonfile').click(); }
+function loadChapterFile(file){
+  if(!file) return;
+  const r = new FileReader();
+  r.onload = () => { try { const c = JSON.parse(r.result); if(!c.chapter||!c.words||!c.batches) throw 0; chapter=c; store.set(K_CH,c); go({name:'home'}); } catch(e){ alert('Ez nem egy Szóműhely-fejezet. A fájlban chapter, words és batches kell legyen.'); } };
+  r.readAsText(file);
+}
+function resetProgress(){
+  if(!confirm('Törlöd a fejezet haladását (tippek, mondatok, kapaszkodók)?')) return;
+  delete state.chapters[chapter.chapter.id]; save(); render();
+}
+async function boot(){
+  state = store.get(K_ST) || { chapters:{} };
+  chapter = store.get(K_CH);
+  if(!chapter){
+    try { const r = await fetch('chapters/wirtschaft-01.json', {cache:'no-store'}); if(r.ok) chapter = await r.json(); } catch(e){}
+  }
+  if(!chapter){ try { chapter = JSON.parse(document.getElementById('chapter-data').textContent.replace('/*__CHAPTER__*/','')); } catch(e){} }
+  if(!chapter){ app.innerHTML = '<h1>Szóműhely</h1><p>Nincs betöltött fejezet. Tölts be egy fejezet-JSON-t.</p><button class="btn" onclick="pickChapter()">Fejezet betöltése</button><input type="file" id="jsonfile" accept=".json" class="hidden" onchange="loadChapterFile(this.files[0])">'; return; }
+  render();
+  try { if ('serviceWorker' in navigator && (location.protocol==='https:' || location.hostname==='localhost')) navigator.serviceWorker.register('sw.js'); } catch(e){}
+}
+boot();
+</script>
+</body>
+</html>

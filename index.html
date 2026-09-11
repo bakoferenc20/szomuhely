@@ -101,6 +101,7 @@
   .stat{font-size:15px;color:var(--muted)}
   .ok-text{color:var(--ok)}
   .menu{margin-top:34px;padding-top:14px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:6px 18px}
+  .chsel{width:100%;font:inherit;font-size:17px;padding:10px 12px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);margin:0 0 6px}
   .hidden{display:none}
   .check{display:flex;gap:10px;align-items:center;margin:14px 0}
   @media (prefers-reduced-motion:no-preference){ .chip,.btn,.mn{transition:background .12s,border-color .12s} }
@@ -121,7 +122,8 @@ const store = {
   set(k,v){ mem[k]=v; try { localStorage.setItem(k, JSON.stringify(v)); } catch(e){} },
   del(k){ delete mem[k]; try { localStorage.removeItem(k); } catch(e){} }
 };
-const K_CH = 'szomuhely:chapter', K_ST = 'szomuhely:state';
+const K_CH = 'szomuhely:chapter', K_ST = 'szomuhely:state', K_CUR = 'szomuhely:current', K_IDX = 'szomuhely:index';
+let chapterIndex = [];
 
 /* ---------- state ---------- */
 let chapter = null;
@@ -147,11 +149,12 @@ function markAll(text, list){
   return t;
 }
 function headword(w){
-  if (w.pos==='noun') return `${w.article} ${w.de}/${w.plural}`;
+  if (w.pos==='noun') return (w.plural && w.plural!=='–') ? `${w.article} ${w.de}/${w.plural}` : `${w.article} ${w.de}`;
   if (w.pos==='verb') return `${w.de} (${w.praet}, ${w.perf})`;
   return w.de;
 }
 function forms(w){
+  if (w.forms) return w.forms;
   if (w.pos==='noun') return w.collocation || '';
   if (w.pos==='verb') return `${w.praet} · ${w.perf} · ${w.valence}`;
   return '';
@@ -196,9 +199,10 @@ function renderHome(){
       <button class="btn small" onclick="startBatch(${i})">${label}</button>
     </div>`;
   }).join('');
+  const switcher = chapterIndex.length>1 ? `<select class="chsel" onchange="switchChapter(this.value)">${chapterIndex.map(c=>`<option value="${esc(c.id)}" ${c.id===chapter.chapter.id?'selected':''}>${esc(c.title)}</option>`).join('')}</select>` : `<p class="lead">${esc(chapter.chapter.title)}</p>`;
   return `
     <h1>Szóműhely</h1>
-    <p class="lead">${esc(chapter.chapter.title)}</p>
+    ${switcher}
     <p class="stat">${esc(chapter.chapter.book)}</p>
     ${rows}
     <div class="batch" style="border-bottom:0">
@@ -230,7 +234,7 @@ function renderWord(){
   if (view.step===0){
     const revealed = !!ui.revealed || s.rating;
     body = `
-      <div class="excerpt"><span class="pg">${w.context.page}. oldal</span><p>${markFirst(w.context.sentence, w.context.highlight)}</p></div>
+      <div class="excerpt"><span class="pg">${w.context.page ? w.context.page+'. oldal' : 'példamondat'}</span><p>${markFirst(w.context.sentence, w.context.highlight)}</p></div>
       <div class="field"><label>Mit jelenthet a kiemelt szó? Tippelj a szövegkörnyezetből, mielőtt megnézed.</label>
         <input type="text" id="guess" value="${esc(s.guess||'')}" placeholder="a tipped magyarul" ${revealed?'disabled':''} oninput="ws('${id}').guess=this.value;save()"></div>
       ${revealed ? `
@@ -251,7 +255,7 @@ function renderWord(){
     const assembled = (w.pos==='noun' && joined ? joined[0].toUpperCase()+joined.slice(1) : joined) || '<span class="slot">' + w.morph.map(m=>'·'.repeat(Math.max(2,m.replace(/-/g,'').length))).join('') + '</span>';
     const contrast = w.contrast; ui.answers ??= {};
     const allAnswered = contrast.items.every((_,k)=>ui.answers[k]!=null);
-    const tName = w.pos==='noun' ? w.de : w.de.split(' ')[0];
+    const tName = w.short || (w.pos==='noun' ? w.de : w.de.split(' ')[0]);
     const cName = contrast.de;
     body = `
       <h2>Rakd össze a szót</h2>
@@ -387,21 +391,35 @@ function pickChapter(){ document.getElementById('jsonfile').click(); }
 function loadChapterFile(file){
   if(!file) return;
   const r = new FileReader();
-  r.onload = () => { try { const c = JSON.parse(r.result); if(!c.chapter||!c.words||!c.batches) throw 0; chapter=c; store.set(K_CH,c); go({name:'home'}); } catch(e){ alert('Ez nem egy Szóműhely-fejezet. A fájlban chapter, words és batches kell legyen.'); } };
+  r.onload = () => { try { const c = JSON.parse(r.result); if(!c.chapter||!c.words||!c.batches) throw 0; chapter=c; store.set('szomuhely:chapter:'+c.chapter.id,c); if(!chapterIndex.find(x=>x.id===c.chapter.id)){ chapterIndex.push({id:c.chapter.id,title:c.chapter.title,file:null}); store.set(K_IDX,chapterIndex); } store.set(K_CUR,c.chapter.id); go({name:'home'}); } catch(e){ alert('Ez nem egy Szóműhely-fejezet. A fájlban chapter, words és batches kell legyen.'); } };
   r.readAsText(file);
 }
 function resetProgress(){
   if(!confirm('Törlöd a fejezet haladását (tippek, mondatok, kapaszkodók)?')) return;
   delete state.chapters[chapter.chapter.id]; save(); render();
 }
+async function loadChapterById(id){
+  const key='szomuhely:chapter:'+id; let c=null;
+  const meta=chapterIndex.find(x=>x.id===id);
+  if(meta && meta.file){ try { const r=await fetch(meta.file,{cache:'no-store'}); if(r.ok){ c=await r.json(); store.set(key,c); } } catch(e){} }
+  if(!c) c=store.get(key);
+  if(!c && id==='wirtschaft-01'){ try { c=JSON.parse(document.getElementById('chapter-data').textContent.replace('/*__CHAPTER__*/','')); } catch(e){} }
+  return c;
+}
+async function switchChapter(id){
+  const c=await loadChapterById(id);
+  if(!c){ alert('Ezt a fejezetet most nem sikerült betölteni. Internettel próbáld újra.'); render(); return; }
+  chapter=c; store.set(K_CUR,id); go({name:'home'});
+}
 async function boot(){
   state = store.get(K_ST) || { chapters:{} };
-  chapter = store.get(K_CH);
-  if(!chapter){
-    try { const r = await fetch('chapters/wirtschaft-01.json', {cache:'no-store'}); if(r.ok) chapter = await r.json(); } catch(e){}
-  }
-  if(!chapter){ try { chapter = JSON.parse(document.getElementById('chapter-data').textContent.replace('/*__CHAPTER__*/','')); } catch(e){} }
-  if(!chapter){ app.innerHTML = '<h1>Szóműhely</h1><p>Nincs betöltött fejezet. Tölts be egy fejezet-JSON-t.</p><button class="btn" onclick="pickChapter()">Fejezet betöltése</button><input type="file" id="jsonfile" accept=".json" class="hidden" onchange="loadChapterFile(this.files[0])">'; return; }
+  const legacy = store.get(K_CH); if(legacy && legacy.chapter){ store.set('szomuhely:chapter:'+legacy.chapter.id, legacy); store.del(K_CH); }
+  chapterIndex = store.get(K_IDX) || [];
+  try { const r=await fetch('chapters/index.json',{cache:'no-store'}); if(r.ok){ const idx=await r.json(); const local=chapterIndex.filter(x=>!x.file && !idx.find(y=>y.id===x.id)); chapterIndex=[...idx,...local]; store.set(K_IDX,chapterIndex); } } catch(e){}
+  if(!chapterIndex.length) chapterIndex=[{id:'wirtschaft-01',title:'Bevezetés: Was bedeutet Wirtschaft?',file:'chapters/wirtschaft-01.json'}];
+  const cur = store.get(K_CUR) || chapterIndex[0].id;
+  chapter = await loadChapterById(cur) || await loadChapterById(chapterIndex[0].id);
+  if(!chapter){ app.innerHTML = '<h1>Szóműhely</h1><p>Nincs betöltött fejezet. Internettel nyisd meg újra, vagy tölts be egy fejezet-JSON-t.</p><button class="btn" onclick="pickChapter()">Fejezet betöltése</button><input type="file" id="jsonfile" accept=".json" class="hidden" onchange="loadChapterFile(this.files[0])">'; return; }
   render();
   try { if ('serviceWorker' in navigator && (location.protocol==='https:' || location.hostname==='localhost')) navigator.serviceWorker.register('sw.js'); } catch(e){}
 }

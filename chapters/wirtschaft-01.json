@@ -1,0 +1,408 @@
+{
+  "chapter": {
+    "id": "wirtschaft-01",
+    "title": "Bevezetés: Was bedeutet Wirtschaft?",
+    "book": "Wirtschaft (Bevezető fejezet, 4–11. oldal)",
+    "deck": "Wirtschaft"
+  },
+  "words": [
+    {
+      "id": "w01",
+      "de": "Knappheit",
+      "article": "die",
+      "plural": "Knappheiten",
+      "pos": "noun",
+      "hu": "szűkösség",
+      "subdeck": "Fachwortschatz",
+      "context": {
+        "sentence": "Wenn es von einer Sache nicht genug gibt, dann ist sie knapp. Knappheit ist ein wichtiges ökonomisches Konzept.",
+        "highlight": "Knappheit",
+        "page": 5
+      },
+      "morph": ["knapp", "-heit"],
+      "morphNote": "A -heit képző melléknévből tulajdonságot csinál: schön → Schönheit, knapp → Knappheit.",
+      "family": [
+        { "de": "knapp", "hu": "szűkös, kevés, éppen csak", "known": true },
+        { "de": "knapp werden", "hu": "fogyóban van, kezd kevés lenni", "known": false },
+        { "de": "verknappen", "hu": "szűkít, csökkenti a kínálatot", "known": false },
+        { "de": "die Verknappung", "hu": "szűkítés, kínálatcsökkentés", "known": false }
+      ],
+      "contrast": {
+        "de": "Mangel",
+        "article": "der",
+        "hu": "hiány, nélkülözés",
+        "note": "Knappheit = relatív, mindig van (közgazdasági alapfogalom: a vágyakhoz képest kevés). Mangel = tényleges hiány, nélkülözés.",
+        "items": [
+          { "sentence": "Die ___ der Ressourcen zwingt uns, Entscheidungen zu treffen.", "answer": "target" },
+          { "sentence": "In vielen Regionen leiden Menschen an ___ an sauberem Wasser.", "answer": "contrast" }
+        ]
+      },
+      "mnemonics": [
+        "KNAPP → mindenki csak KEVESET KAP belőle. A -heit végződéssel: szűkös-ség.",
+        "Knappheit ~ „kanapé“: egy kanapén kevés a hely, mindenki szorong rajta – szűkösség."
+      ]
+    },
+    {
+      "id": "w02",
+      "de": "aufteilen",
+      "pos": "verb",
+      "praet": "teilte auf",
+      "perf": "hat aufgeteilt",
+      "valence": "etw. (Akk.) unter + Dat. / in + Akk.",
+      "hu": "feloszt, szétoszt (részekre)",
+      "subdeck": "Allgemein",
+      "context": {
+        "sentence": "Sie müssen sich also für etwas entscheiden, um das Vorhandene so aufzuteilen, dass alle zufrieden sind.",
+        "highlight": "aufzuteilen",
+        "page": 4
+      },
+      "morph": ["auf-", "teil", "-en"],
+      "morphNote": "Elváló igekötő: teilt … auf. Az „auf” itt pont a magyar „fel-” párja: fel-oszt.",
+      "family": [
+        { "de": "teilen", "hu": "oszt, megoszt", "known": true },
+        { "de": "der Teil", "hu": "rész", "known": true },
+        { "de": "verteilen", "hu": "szétoszt, eloszt (többek között)", "known": false },
+        { "de": "einteilen", "hu": "beoszt (időt, csoportot)", "known": false },
+        { "de": "die Aufteilung", "hu": "felosztás", "known": false }
+      ],
+      "contrast": {
+        "de": "verteilen",
+        "hu": "szétoszt, eloszt (többek között)",
+        "note": "aufteilen = egy egészet részekre bont (a torta, a csoport). verteilen = valamit többek között szétoszt (a vizet a menekültek között).",
+        "items": [
+          { "sentence": "Die Lehrerin hat die Klasse in vier Gruppen ___.", "answer": "target", "form": "aufgeteilt" },
+          { "sentence": "Die Helfer haben Wasser an die Familien ___.", "answer": "contrast", "form": "verteilt" }
+        ]
+      },
+      "mnemonics": [
+        "auf-teilen = fel-oszt: az igekötő szó szerint ugyanaz, mint a magyar.",
+        "Teil = rész, mint a tortaszelet. Aufteilen: felszeleteled a tortát, hogy jusson mindenkinek."
+      ]
+    },
+    {
+      "id": "w03",
+      "de": "eingreifen",
+      "pos": "verb",
+      "praet": "griff ein",
+      "perf": "hat eingegriffen",
+      "valence": "in + Akk.",
+      "hu": "beavatkozik",
+      "subdeck": "Fachwortschatz",
+      "context": {
+        "sentence": "Im Laufe der Zeit wären die Preise auch ohne Eingreifen der Regierung gesunken.",
+        "highlight": "Eingreifen",
+        "page": 11
+      },
+      "morph": ["ein-", "greif", "-en"],
+      "morphNote": "ein- = bele; greifen = megfog, nyúl. Belenyúl a folyamatba. Főnevesítve: das Eingreifen / der Eingriff (staatlicher Eingriff = állami beavatkozás).",
+      "family": [
+        { "de": "greifen", "hu": "megfog, nyúl vmi után", "known": true },
+        { "de": "der Griff", "hu": "fogás, fogantyú", "known": false },
+        { "de": "der Eingriff", "hu": "beavatkozás (orvosi műtét is)", "known": false },
+        { "de": "zugreifen", "hu": "hozzányúl, lecsap rá", "known": false },
+        { "de": "angreifen", "hu": "megtámad", "known": false }
+      ],
+      "contrast": {
+        "de": "angreifen",
+        "hu": "megtámad",
+        "note": "ein- = bele (belenyúl a folyamatba, beavatkozik). an- = rá (rátámad). Ugyanaz a tő, más igekötő, más jelentés.",
+        "items": [
+          { "sentence": "Der Staat sollte nicht in jeden Markt ___.", "answer": "target", "form": "eingreifen" },
+          { "sentence": "Die Armee hat das Nachbarland ___.", "answer": "contrast", "form": "angegriffen" }
+        ]
+      },
+      "mnemonics": [
+        "ein-greifen = bele-markol: a kormány belemarkol a piacba.",
+        "Eingriff ~ „in-grip”: a kormány „gripje” a piacon = beavatkozás."
+      ]
+    },
+    {
+      "id": "w04",
+      "de": "Vorrat",
+      "article": "der",
+      "plural": "Vorräte",
+      "pos": "noun",
+      "hu": "készlet, tartalék",
+      "subdeck": "Fachwortschatz",
+      "collocation": "Vorräte anlegen = készletet felhalmoz; einen Vorrat an etw. (Dat.) haben",
+      "context": {
+        "sentence": "Regierungen sollten jetzt Vorräte von Lebensmitteln anlegen, um Bedürftige damit versorgen zu können.",
+        "highlight": "Vorräte",
+        "page": 10
+      },
+      "morph": ["Vor-", "rat"],
+      "morphNote": "A „Rat” itt nem tanács, hanem régi szó: holmi, felszerelés (Hausrat, Gerät, Unrat). Vor-rat = előre félretett holmi.",
+      "family": [
+        { "de": "der Hausrat", "hu": "háztartási felszerelés", "known": false },
+        { "de": "das Gerät", "hu": "készülék, eszköz", "known": true },
+        { "de": "vorrätig", "hu": "raktáron lévő, készleten", "known": false },
+        { "de": "der Unrat", "hu": "szemét, hulladék", "known": false }
+      ],
+      "contrast": {
+        "de": "Bestand",
+        "article": "der",
+        "hu": "állomány, meglévő készlet",
+        "note": "Vorrat = előre félretett készlet, a jövőre (tartalék). Bestand = a meglévő állomány, ami most van (lakásállomány, raktárkészlet).",
+        "items": [
+          { "sentence": "Vor dem Winter legen viele Menschen ___ an Holz an.", "answer": "target", "form": "Vorräte" },
+          { "sentence": "Der ___ an Wohnungen in der Stadt ist gesunken.", "answer": "contrast", "form": "Bestand" }
+        ]
+      },
+      "mnemonics": [
+        "Vor-rat = előre-ellátmány. A Rat itt holmi, mint a Hausrat.",
+        "VORRÁT ~ „raktár ELŐRE”: amit előre bepakolsz a raktárba."
+      ]
+    },
+    {
+      "id": "w05",
+      "de": "vorhersagen",
+      "pos": "verb",
+      "praet": "sagte vorher",
+      "perf": "hat vorhergesagt",
+      "valence": "etw. (Akk.)",
+      "hu": "előre jelez, megjósol",
+      "subdeck": "Fachwortschatz",
+      "context": {
+        "sentence": "Modelle können dabei helfen, etwas vorherzusagen, also Prognosen zu erstellen.",
+        "highlight": "vorherzusagen",
+        "page": 10
+      },
+      "morph": ["vorher-", "sag", "-en"],
+      "morphNote": "vorher (előbb, előzőleg) + sagen (mond) = előre mond. Elváló: sagt … vorher; zu-alak: vorherzusagen.",
+      "family": [
+        { "de": "sagen", "hu": "mond", "known": true },
+        { "de": "vorher", "hu": "előbb, előzőleg", "known": true },
+        { "de": "die Vorhersage", "hu": "előrejelzés", "known": false },
+        { "de": "die Wettervorhersage", "hu": "időjárás-előrejelzés", "known": false },
+        { "de": "die Prognose", "hu": "prognózis", "known": true }
+      ],
+      "contrast": {
+        "de": "vorhersehen",
+        "hu": "előre lát, számít rá",
+        "note": "vorhersagen = kimondja, megjósolja előre (aktív prognózis, modellel). vorhersehen = előre látja, számít rá (belső felismerés).",
+        "items": [
+          { "sentence": "Das Modell kann den Preis für Reis ___.", "answer": "target", "form": "vorhersagen" },
+          { "sentence": "Niemand konnte die Finanzkrise ___.", "answer": "contrast", "form": "vorhersehen" }
+        ]
+      },
+      "mnemonics": [
+        "vorher + sagen = előbb mondani: szó szerint elő-re-mond.",
+        "Wettervorhersage: az időjárás-jelentés, amit minden este hallasz – ugyanez az ige."
+      ]
+    },
+    {
+      "id": "w06",
+      "de": "verdrängen",
+      "pos": "verb",
+      "praet": "verdrängte",
+      "perf": "hat verdrängt",
+      "valence": "jmdn./etw. (Akk.) von/aus + Dat.",
+      "hu": "kiszorít",
+      "subdeck": "Fachwortschatz",
+      "context": {
+        "sentence": "Große Unternehmen sind schlecht! Sie verdienen deshalb so viel Geld, weil sie kleinere Unternehmen vom Markt verdrängen.",
+        "highlight": "verdrängen",
+        "page": 11
+      },
+      "morph": ["ver-", "dräng", "-en"],
+      "morphNote": "drängen = nyom, tol, sürget. ver- + drängen = elnyom a helyéről → kiszorít. Makroökonómiában: der Verdrängungseffekt = crowding-out hatás.",
+      "family": [
+        { "de": "drängen", "hu": "nyom, tol, sürget", "known": false },
+        { "de": "der Drang", "hu": "késztetés, kényszer", "known": false },
+        { "de": "sich drängeln", "hu": "tolakodik", "known": false },
+        { "de": "die Verdrängung", "hu": "kiszorítás (pszichológiában: elfojtás)", "known": false },
+        { "de": "der Verdrängungseffekt", "hu": "kiszorítási hatás (crowding out)", "known": false }
+      ],
+      "contrast": {
+        "de": "vertreiben",
+        "hu": "elűz, elkerget",
+        "note": "verdrängen = a helyéből kinyomja, gyakran gazdasági vagy átvitt értelemben. vertreiben = elűz, elkerget, gyakran fizikai, erőszakos.",
+        "items": [
+          { "sentence": "Billige Importe haben viele lokale Produzenten vom Markt ___.", "answer": "target", "form": "verdrängt" },
+          { "sentence": "Die Bewohner wurden aus ihren Häusern ___.", "answer": "contrast", "form": "vertrieben" }
+        ]
+      },
+      "mnemonics": [
+        "drängen = nyomul; ver-drängen = el-nyom a helyéről → kiszorít.",
+        "Verdrängungseffekt = crowding out: az állami kiadás kiszorítja a magánberuházást."
+      ]
+    },
+    {
+      "id": "w07",
+      "de": "aufkommen für",
+      "pos": "verb",
+      "praet": "kam auf",
+      "perf": "ist aufgekommen",
+      "valence": "für + Akk.",
+      "hu": "fizet vmiért, viseli a költségét, helytáll vmiért",
+      "subdeck": "Fachwortschatz",
+      "context": {
+        "sentence": "Wer soll für das Schulessen aufkommen?",
+        "highlight": "aufkommen",
+        "page": 8
+      },
+      "morph": ["auf-", "komm", "-en"],
+      "morphNote": "Elváló: kommt … auf. A „für” nélkül mást jelent (Wind kommt auf = szél támad; Zweifel kommen auf = kétség merül fel). Főnév: das Steueraufkommen = adóbevétel.",
+      "family": [
+        { "de": "kommen", "hu": "jön", "known": true },
+        { "de": "das Aufkommen", "hu": "bevétel, mennyiség (pl. Steueraufkommen)", "known": false },
+        { "de": "aufkommen (Wind, Zweifel)", "hu": "feltámad, felmerül", "known": false }
+      ],
+      "contrast": {
+        "de": "bezahlen",
+        "hu": "kifizet",
+        "note": "aufkommen für = viseli a költséget, vállalja a felelősséget (ki állja?). bezahlen = a konkrét fizetési aktus.",
+        "items": [
+          { "sentence": "Die Versicherung ___ für den Schaden ___.", "answer": "target", "form": "kommt … auf" },
+          { "sentence": "Ich habe die Rechnung sofort ___.", "answer": "contrast", "form": "bezahlt" }
+        ]
+      },
+      "mnemonics": [
+        "aufkommen für = „ki jön fel érte?” = ki áll helyt, ki állja a számlát.",
+        "Steueraufkommen: az adó, ami „feljön” a költségvetésbe – ugyanez az auf-kommen."
+      ]
+    },
+    {
+      "id": "w08",
+      "de": "abstempeln",
+      "pos": "verb",
+      "praet": "stempelte ab",
+      "perf": "hat abgestempelt",
+      "valence": "jmdn./etw. (Akk.) als + Akk.",
+      "hu": "megbélyegez, lebélyegez (vkit vminek)",
+      "subdeck": "Allgemein",
+      "context": {
+        "sentence": "In der Wirtschaftswissenschaft geht es nicht darum, die Menschen als „gut“ oder „schlecht“ abzustempeln.",
+        "highlight": "abzustempeln",
+        "page": 8
+      },
+      "morph": ["ab-", "stempel", "-n"],
+      "morphNote": "der Stempel = bélyegző, pecsét. ab-stempeln: rányomja a pecsétet és kész – végleges címke.",
+      "family": [
+        { "de": "der Stempel", "hu": "bélyegző, pecsét", "known": false },
+        { "de": "stempeln", "hu": "pecsétel, lebélyegez", "known": false },
+        { "de": "die Stempeluhr", "hu": "blokkolóóra", "known": false }
+      ],
+      "contrast": {
+        "de": "bezeichnen",
+        "hu": "nevez vminek, megjelöl",
+        "note": "abstempeln = negatív, végleges címke (megbélyegez). bezeichnen = semleges elnevezés.",
+        "items": [
+          { "sentence": "Man sollte niemanden vorschnell als faul ___.", "answer": "target", "form": "abstempeln" },
+          { "sentence": "Ökonomen ___ diesen Effekt als Verdrängung.", "answer": "contrast", "form": "bezeichnen" }
+        ]
+      },
+      "mnemonics": [
+        "ab-stempeln: rányomja a pecsétet – „le van pecsételve”, hogy ő rossz.",
+        "Stempel = stempli. Akire ráütötték a stemplit, az meg van bélyegezve."
+      ]
+    },
+    {
+      "id": "w09",
+      "de": "verhungern",
+      "pos": "verb",
+      "praet": "verhungerte",
+      "perf": "ist verhungert",
+      "valence": "– (tárgy nélkül)",
+      "hu": "éhen hal",
+      "subdeck": "Allgemein",
+      "context": {
+        "sentence": "Rationierungen retteten viele Menschen vor dem Verhungern.",
+        "highlight": "Verhungern",
+        "page": 11
+      },
+      "morph": ["ver-", "hunger", "-n"],
+      "morphNote": "A ver- itt „a végállapotig”: hungern → verhungern (éhen hal), dursten → verdursten (szomjan hal), bluten → verbluten (elvérzik). Perfekt sein-nel!",
+      "family": [
+        { "de": "der Hunger", "hu": "éhség", "known": true },
+        { "de": "hungern", "hu": "éhezik", "known": false },
+        { "de": "die Hungersnot", "hu": "éhínség", "known": false },
+        { "de": "verdursten", "hu": "szomjan hal", "known": false }
+      ],
+      "contrast": {
+        "de": "hungern",
+        "hu": "éhezik",
+        "note": "hungern = éhezik (a folyamat). verhungern = éhen hal (a végállapot). A ver- viszi el a végéig.",
+        "items": [
+          { "sentence": "Während der Krise mussten viele Familien ___.", "answer": "contrast", "form": "hungern" },
+          { "sentence": "Ohne Hilfe wären Tausende ___.", "answer": "target", "form": "verhungert" }
+        ]
+      },
+      "mnemonics": [
+        "ver- = halálra: ver-hungern, ver-dursten, ver-bluten – a ver- a végzetes befejezés.",
+        "vor dem Verhungern retten = az éhhaláltól megment (a könyv mondata)."
+      ]
+    },
+    {
+      "id": "w10",
+      "de": "Schaubild",
+      "article": "das",
+      "plural": "Schaubilder",
+      "pos": "noun",
+      "hu": "ábra, szemléltető diagram",
+      "subdeck": "Fachwortschatz",
+      "context": {
+        "sentence": "Wirtschaftswissenschaftler verwenden für ihre Modelle oft Schaubilder oder Diagramme.",
+        "highlight": "Schaubilder",
+        "page": 10
+      },
+      "morph": ["Schau", "bild"],
+      "morphNote": "Schau (bemutató, mint Schaufenster = kirakat) + Bild (kép) = kép, amit azért mutatnak, hogy megérts valamit.",
+      "family": [
+        { "de": "schauen", "hu": "néz", "known": true },
+        { "de": "das Schaufenster", "hu": "kirakat", "known": false },
+        { "de": "das Bild", "hu": "kép", "known": true },
+        { "de": "die Abbildung", "hu": "ábra, illusztráció (Abb.)", "known": false },
+        { "de": "das Diagramm", "hu": "diagram", "known": true }
+      ],
+      "contrast": {
+        "de": "Abbildung",
+        "article": "die",
+        "hu": "ábra, illusztráció",
+        "note": "Schaubild = magyarázó, szemléltető ábra (grafikon, folyamatábra). Abbildung = bármilyen ábra vagy kép a szövegben – a tudományos „Abb. 3” hivatkozás.",
+        "items": [
+          { "sentence": "Das ___ zeigt das Verhältnis von Preis und Menge.", "answer": "target", "form": "Schaubild" },
+          { "sentence": "Siehe ___ 3 auf Seite 12.", "answer": "contrast", "form": "Abbildung" }
+        ]
+      },
+      "mnemonics": [
+        "Schau + Bild = „nézd-kép”: kép, amit azért mutatnak, hogy megérts valamit.",
+        "Schaufenster = kirakat, ugyanaz a Schau: megmutatni valamit."
+      ]
+    }
+  ],
+  "batches": [
+    {
+      "title": "1. kör",
+      "words": ["w01", "w02", "w03", "w04", "w05"],
+      "story": {
+        "de": "In einem kleinen Land war der Reis knapp geworden. Die Knappheit war so groß, dass die Regierung entscheiden musste: Soll sie in den Markt eingreifen? Die Ökonomin Lena hatte mit ihrem Modell vorhergesagt, dass die Preise um dreißig Prozent steigen würden. Deshalb schlug sie vor, sofort Vorräte an Reis anzulegen. Die Regierung griff ein: Sie kaufte Reis und legte große Vorräte an. Dann musste sie das Vorhandene gerecht aufteilen – jede Familie bekam gleich viel. Lenas Prognose war richtig gewesen, und niemand musste hungern.",
+        "highlights": ["Knappheit", "eingreifen", "vorhergesagt", "Vorräte", "griff ein", "aufteilen"],
+        "hu_outline": [
+          "Egy kis országban szűkös lett a rizs.",
+          "A kormány kérdése: beavatkozzon-e a piacon?",
+          "Lena közgazdász a modelljével 30%-os áremelkedést jósolt.",
+          "Javaslata: azonnal rizskészletet felhalmozni.",
+          "A kormány beavatkozott, nagy készletet halmozott fel.",
+          "A meglévőt igazságosan felosztották a családok között."
+        ]
+      }
+    },
+    {
+      "title": "2. kör",
+      "words": ["w06", "w07", "w08", "w09", "w10"],
+      "story": {
+        "de": "Auf dem Markt der kleinen Stadt gab es früher zehn Bäckereien. Dann kam ein großer Konzern und verdrängte fast alle vom Markt. Die Zeitung stempelte den Konzern sofort als „böse“ ab. Aber die Ökonomin Lena wollte das genauer verstehen. Sie zeichnete ein Schaubild: auf der einen Achse die Preise, auf der anderen die Zahl der Bäckereien. Das Schaubild zeigte, dass die Brotpreise gesunken waren – niemand musste verhungern, aber viele Bäcker hatten ihre Arbeit verloren. „Wer soll jetzt für die arbeitslosen Bäcker aufkommen?“, fragte Lena. „Der Konzern, der Staat oder die Kunden?“",
+        "highlights": ["verdrängte", "stempelte", "Schaubild", "verhungern", "aufkommen"],
+        "hu_outline": [
+          "A kisvárosban régen tíz pékség volt.",
+          "Jött egy nagy konszern, és majdnem mindet kiszorította a piacról.",
+          "Az újság rögtön „gonosznak” bélyegezte.",
+          "Lena közgazdász ábrát rajzolt: ár és a pékségek száma.",
+          "A kenyér olcsóbb lett, senki nem halt éhen, de sok pék elvesztette a munkáját.",
+          "Kérdés: ki fizessen a munkanélküli pékekért?"
+        ]
+      }
+    }
+  ]
+}

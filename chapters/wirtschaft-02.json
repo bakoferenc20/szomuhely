@@ -1,0 +1,1191 @@
+{
+  "chapter": {
+    "id": "wirtschaft-02",
+    "title": "1. Kapitel: Nicht genug für alle",
+    "book": "Wirtschaft (1. fejezet, 12–21. oldal) · 44 szó",
+    "deck": "Wirtschaft"
+  },
+  "words": [
+    {
+      "id": "w01", "de": "Bedürfnis", "article": "das", "plural": "Bedürfnisse", "pos": "noun",
+      "hu": "szükséglet, igény", "subdeck": "Fachwortschatz",
+      "collocation": "Bedürfnis nach + Dat. · Bedürfnisse decken/befriedigen – szükségletet kielégít",
+      "context": { "sentence": "Das Bedürfnis nach Nahrung, Wasser und Behausungen hat sich für uns Menschen seit der Steinzeit nicht verändert.", "highlight": "Bedürfnis", "page": 14 },
+      "morph": ["Be-", "dürf", "-nis"],
+      "morphNote": "dürfen → bedürfen (+ Gen.: szüksége van vmire) → das Bedürfnis. A -nis képző semleges: das Ergebnis, das Erlebnis, das Bedürfnis.",
+      "family": [
+        { "de": "bedürfen (+ Gen.)", "hu": "szüksége van vmire (választékos)", "known": false },
+        { "de": "bedürftig", "hu": "rászoruló", "known": true },
+        { "de": "das Grundbedürfnis", "hu": "alapszükséglet", "known": false },
+        { "de": "Bedürfnisse decken", "hu": "szükségleteket fedez, kielégít", "known": false }
+      ],
+      "contrast": { "de": "Bedarf", "article": "der", "hu": "szükséglet, igény (mennyiségként)",
+        "note": "Bedürfnis = az érzett szükséglet, a személyes hiányérzet (nach + Dat.). Bedarf = a konkrét, mérhető igény, amit fedezni kell – üzleti, tervezési szó (an + Dat.).",
+        "items": [
+          { "sentence": "Das ___ nach Sicherheit ist bei allen Menschen stark.", "answer": "target", "form": "Bedürfnis" },
+          { "sentence": "Der ___ an Fachkräften steigt jedes Jahr.", "answer": "contrast", "form": "Bedarf" }
+        ] },
+      "mnemonics": [
+        "be-DÜRF-nis: amire „szükség van” (bedürfen) – a -nis csomagolja főnévvé, mint az Ergebnis.",
+        "Bedürfnis ~ „be-dörömböl”: bedörömböl, hogy kell neki valami – ez az igény."
+      ]
+    },
+    {
+      "id": "w02", "de": "Vorfahr", "article": "der", "plural": "Vorfahren", "pos": "noun",
+      "hu": "ős, előd", "subdeck": "Allgemein",
+      "collocation": "gyenge ragozás: den/dem Vorfahren · ellentéte: der Nachfahre – utód",
+      "context": { "sentence": "Hier sind einige Ressourcen, die unsere frühen Vorfahren benötigten:", "highlight": "Vorfahren", "page": 14 },
+      "morph": ["Vor-", "fahr"],
+      "morphNote": "vor + fahren: aki „előre ment”, előttünk járt az időben. Gyenge ragozás: den Vorfahren, die Vorfahren. Ellentéte: der Nachfahre – utód.",
+      "family": [
+        { "de": "fahren", "hu": "megy, utazik", "known": true },
+        { "de": "der Nachfahre", "hu": "utód, leszármazott", "known": false },
+        { "de": "die Vorfahrt", "hu": "elsőbbség (közlekedésben)", "known": false },
+        { "de": "erfahren", "hu": "megtud; (mn.) tapasztalt", "known": false }
+      ],
+      "contrast": { "de": "Vorfahrt", "article": "die", "hu": "elsőbbség (az úton)",
+        "note": "der Vorfahr = ős, előd (személy). die Vorfahrt = elsőbbség az úton. Ugyanaz a két elem, egészen más jelentés – a névelő és a -t a különbség.",
+        "items": [
+          { "sentence": "Unsere ___ lebten von der Jagd.", "answer": "target", "form": "Vorfahren" },
+          { "sentence": "An dieser Kreuzung hat der Bus ___.", "answer": "contrast", "form": "Vorfahrt" }
+        ] },
+      "mnemonics": [
+        "Vor-fahr: aki előttünk „utazott” az időben – az ős.",
+        "Vorfahren – az elődök előre mentek, mi jövünk utánuk: Nachfahren."
+      ]
+    },
+    {
+      "id": "w03", "de": "Art", "article": "die", "plural": "Arten", "pos": "noun",
+      "hu": "fajta, típus; mód", "subdeck": "Allgemein",
+      "collocation": "eine Art von + Dat. · auf diese Art (und Weise) – ily módon",
+      "context": { "sentence": "Moderne Wirtschaftssysteme benötigen viele verschiedene Arten von Ressourcen, die unsere Vorfahren noch nicht nutzten.", "highlight": "Arten", "page": 15 },
+      "morph": ["Art"],
+      "morphNote": "Rövid, régi germán szó. Két fő jelentés: fajta, típus (eine Art Werkzeug – egyfajta szerszám) és mód (auf diese Art). Biológiában: faj.",
+      "family": [
+        { "de": "die Weise", "hu": "mód", "known": true },
+        { "de": "auf diese Art und Weise", "hu": "ily módon", "known": false },
+        { "de": "die Artenvielfalt", "hu": "fajgazdagság", "known": false },
+        { "de": "artig", "hu": "jól nevelt (gyerek)", "known": false }
+      ],
+      "contrast": { "de": "Sorte", "article": "die", "hu": "fajta (áru, növény)",
+        "note": "Art = általános típus, jelleg (és: mód). Sorte = konkrét áru- vagy növényfajta: Apfelsorte, Kaffeesorte.",
+        "items": [
+          { "sentence": "Es gibt viele ___ von Ressourcen.", "answer": "target", "form": "Arten" },
+          { "sentence": "Diese ___ Äpfel ist besonders süß.", "answer": "contrast", "form": "Sorte" }
+        ] },
+      "mnemonics": [
+        "Art = a magyar „műfaj” art-ja: fajta, típus, mód.",
+        "eine Art Werkzeug = „egyfajta szerszám” – az Art a fajta."
+      ]
+    },
+    {
+      "id": "w04", "de": "um … herum", "short": "um … herum", "pos": "phrase",
+      "forms": "um + Akk. … herum · a herum a szerkezet végén áll",
+      "hu": "körül, körülöttünk", "subdeck": "Allgemein",
+      "context": { "sentence": "Alles um uns herum ist eine potenzielle Ressource.", "highlight": "um uns herum", "page": 15 },
+      "morph": ["um", "herum"],
+      "morphNote": "Keretes szerkezet: az um tárgyesettel áll elöl, a herum a végére kerül: um das Haus herum. Hasonló keret: um … willen (vmi kedvéért).",
+      "family": [
+        { "de": "um + Akk.", "hu": "körül; -kor", "known": true },
+        { "de": "herum", "hu": "körbe, ide-oda", "known": false },
+        { "de": "ringsherum", "hu": "körös-körül", "known": false },
+        { "de": "umgeben", "hu": "körülvesz", "known": false }
+      ],
+      "contrast": { "de": "ringsherum", "hu": "körös-körül",
+        "note": "um … herum = valami körül, egy dologhoz viszonyítva (um den Tisch herum). ringsherum = körös-körül, önállóan, viszonyítás nélkül.",
+        "items": [
+          { "sentence": "Die Kinder saßen ___ den Tisch ___.", "answer": "target", "form": "um … herum" },
+          { "sentence": "Es war dunkel, und ___ war niemand zu sehen.", "answer": "contrast", "form": "ringsherum" }
+        ] },
+      "mnemonics": [
+        "um … herum: um = körül, herum = körbe – kétszer mondja, hogy biztosan körbeérjen.",
+        "Alles um uns herum – minden, ami körülöttünk van: ez a mondat maga a kapaszkodó."
+      ]
+    },
+    {
+      "id": "w05", "de": "Dünger", "article": "der", "plural": "Dünger", "pos": "noun",
+      "hu": "műtrágya, trágya", "subdeck": "Fachwortschatz",
+      "context": { "sentence": "Moderne Wirtschaftssysteme benötigen viele verschiedene Arten von Ressourcen. Hier sind einige Beispiele: Sonnenlicht, Uran, Dünger, Erdöl, Sand, Wind.", "highlight": "Dünger", "page": 15 },
+      "morph": ["Düng", "-er"],
+      "morphNote": "düngen (trágyáz) + -er: ami trágyáz. Eszköz-főnév, nem személy – mint a Fernseher, a Kocher.",
+      "family": [
+        { "de": "düngen", "hu": "trágyáz", "known": false },
+        { "de": "das Düngemittel", "hu": "trágyaszer", "known": false },
+        { "de": "der Kunstdünger", "hu": "műtrágya", "known": false },
+        { "de": "der Mist", "hu": "istállótrágya; (szleng) baromság", "known": false }
+      ],
+      "contrast": { "de": "Mist", "article": "der", "hu": "trágya (állati); baromság",
+        "note": "Dünger = trágya általában, főleg a mesterséges. Mist = állati, istállótrágya – és szlengben: „a fenébe”, baromság.",
+        "items": [
+          { "sentence": "Die Bauern streuen ___ auf die Felder.", "answer": "target", "form": "Dünger" },
+          { "sentence": "So ein ___! Der Zug ist schon wieder weg.", "answer": "contrast", "form": "Mist" }
+        ] },
+      "mnemonics": [
+        "Dünger ~ „dönget”: a műtrágya döngeti a földet, hogy teremjen.",
+        "düngen → Dünger, mint kochen → Kocher: az -er a „csináló”."
+      ]
+    },
+    {
+      "id": "w06", "de": "Verbrauch", "article": "der", "plural": "–", "pos": "noun",
+      "hu": "fogyasztás, felhasználás (erőforrásé)", "subdeck": "Fachwortschatz",
+      "collocation": "csak egyes számban · der Verbrauch an + Dat.",
+      "context": { "sentence": "Die Opportunitätskosten des Verbrauchs einer Ressource sind alle nicht verwirklichten Möglichkeiten, diese Ressource zu nutzen.", "highlight": "Verbrauchs", "page": 16 },
+      "morph": ["Ver-", "brauch"],
+      "morphNote": "brauchen (szüksége van) → ver-brauchen (elhasznál, elfogyaszt): a ver- itt „el-”. A főnév képző nélkül, a tőből: der Verbrauch.",
+      "family": [
+        { "de": "brauchen", "hu": "szüksége van", "known": true },
+        { "de": "verbrauchen", "hu": "elhasznál, elfogyaszt", "known": false },
+        { "de": "der Verbraucher", "hu": "fogyasztó", "known": true },
+        { "de": "der Energieverbrauch", "hu": "energiafogyasztás", "known": false }
+      ],
+      "contrast": { "de": "Konsum", "article": "der", "hu": "fogyasztás (gazdasági)",
+        "note": "Verbrauch = fizikai elhasználás: energia, víz, üzemanyag, erőforrás. Konsum = gazdasági fogyasztás: amit a háztartások vásárolnak.",
+        "items": [
+          { "sentence": "Der ___ an Wasser ist im Sommer am höchsten.", "answer": "target", "form": "Verbrauch" },
+          { "sentence": "Hohe Steuern bremsen den ___.", "answer": "contrast", "form": "Konsum" }
+        ] },
+      "mnemonics": [
+        "ver-brauchen = „el-használ”: amit elhasználsz, az a Verbrauch.",
+        "Verbrauch ↔ Verbraucher: a fogyasztó fogyasztása."
+      ]
+    },
+    {
+      "id": "w07", "de": "verwirklichen", "pos": "verb", "praet": "verwirklichte", "perf": "hat verwirklicht",
+      "valence": "etw. (Akk.)", "hu": "megvalósít", "subdeck": "Allgemein",
+      "context": { "sentence": "Die Opportunitätskosten des Verbrauchs einer Ressource sind alle nicht verwirklichten Möglichkeiten, diese Ressource zu nutzen.", "highlight": "verwirklichten", "page": 16 },
+      "morph": ["ver-", "wirklich", "-en"],
+      "morphNote": "wirklich (valódi) + ver- + -en: valódivá tesz = megvalósít. A Partizip melléknévként: die nicht verwirklichten Möglichkeiten – a meg nem valósult lehetőségek.",
+      "family": [
+        { "de": "wirklich", "hu": "valódi, tényleg", "known": true },
+        { "de": "die Wirklichkeit", "hu": "valóság", "known": false },
+        { "de": "die Verwirklichung", "hu": "megvalósítás", "known": false },
+        { "de": "sich verwirklichen", "hu": "megvalósítja önmagát", "known": false }
+      ],
+      "contrast": { "de": "umsetzen", "hu": "megvalósít, átültet (tervet)",
+        "note": "verwirklichen = álmot, ötletet, lehetőséget valóra vált. umsetzen = tervet, döntést a gyakorlatba átültet – technikaibb, projektnyelv.",
+        "items": [
+          { "sentence": "Sie hat ihren Traum vom eigenen Laden ___.", "answer": "target", "form": "verwirklicht" },
+          { "sentence": "Die Regierung hat die Reform schnell ___.", "answer": "contrast", "form": "umgesetzt" }
+        ] },
+      "mnemonics": [
+        "ver-WIRKLICH-en: „valódivá” tesz – megvalósít.",
+        "Wirklichkeit = valóság; verwirklichen = a valóságba visz."
+      ]
+    },
+    {
+      "id": "w08", "de": "wahrnehmen", "pos": "verb", "praet": "nahm wahr", "perf": "hat wahrgenommen",
+      "valence": "etw. (Akk.)", "hu": "érzékel, észlel; él (a lehetőséggel)", "subdeck": "Allgemein",
+      "context": { "sentence": "Das sind die Kosten, die dadurch entstehen, dass du bestimmte Möglichkeiten nicht wahrnehmen kannst.", "highlight": "wahrnehmen", "page": 16 },
+      "morph": ["wahr-", "nehm", "-en"],
+      "morphNote": "wahr (igaz) + nehmen (vesz): „igaznak vesz” → észlel. Elváló: nimmt … wahr. Két jelentés: érzékel (Geräusche wahrnehmen) és él vele (eine Chance wahrnehmen).",
+      "family": [
+        { "de": "nehmen", "hu": "vesz", "known": true },
+        { "de": "wahr", "hu": "igaz", "known": true },
+        { "de": "die Wahrnehmung", "hu": "észlelés, érzékelés", "known": false },
+        { "de": "einen Termin wahrnehmen", "hu": "elmegy az időpontra", "known": false }
+      ],
+      "contrast": { "de": "bemerken", "hu": "észrevesz",
+        "note": "wahrnehmen = tudatosan érzékel, felfog – és: kihasznál egy lehetőséget. bemerken = észrevesz: hirtelen feltűnik valami.",
+        "items": [
+          { "sentence": "Wir sollten diese Chance unbedingt ___.", "answer": "target", "form": "wahrnehmen" },
+          { "sentence": "Ich habe erst später ___, dass mein Handy weg war.", "answer": "contrast", "form": "bemerkt" }
+        ] },
+      "mnemonics": [
+        "wahr-nehmen: „igaznak veszi” – érzékeli, hogy ott a lehetőség, és él vele.",
+        "eine Chance wahrnehmen = megragadja az esélyt: az alternatívaköltség a meg nem ragadott esély."
+      ]
+    },
+    {
+      "id": "w09", "de": "verzichten auf", "short": "verzichten", "pos": "verb", "praet": "verzichtete", "perf": "hat verzichtet",
+      "valence": "auf + Akk.", "hu": "lemond (valamiről)", "subdeck": "Allgemein",
+      "context": { "sentence": "Bei jeder Entscheidung musst du nämlich auf etwas verzichten.", "highlight": "verzichten", "page": 16 },
+      "morph": ["ver-", "zicht", "-en"],
+      "morphNote": "Régi tő (zeihen – vádol, lemond), ma csak ebben az igében él. Vonzat: auf + Akk. Főnév: der Verzicht auf + Akk. – ez az alternatívaköltség lényege.",
+      "family": [
+        { "de": "der Verzicht", "hu": "lemondás", "known": false },
+        { "de": "unverzichtbar", "hu": "nélkülözhetetlen", "known": false },
+        { "de": "verzichtbar", "hu": "nélkülözhető", "known": false },
+        { "de": "aufgeben", "hu": "felad", "known": false }
+      ],
+      "contrast": { "de": "aufgeben", "hu": "felad, abbahagy",
+        "note": "verzichten auf = tudatosan lemond valamiről, választásból. aufgeben = felad, abbahagy – gyakran kényszerből, kudarc után.",
+        "items": [
+          { "sentence": "Er ___ dieses Jahr ___ den Urlaub, um zu sparen.", "answer": "target", "form": "verzichtet … auf" },
+          { "sentence": "Nach dem dritten Versuch hat sie ___.", "answer": "contrast", "form": "aufgegeben" }
+        ] },
+      "mnemonics": [
+        "ver-ZICHT-en ~ „ver-cicc”: cicc, lemondtam róla.",
+        "unverzichtbar = nélkülözhetetlen – amiről nem lehet lemondani."
+      ]
+    },
+    {
+      "id": "w10", "de": "nämlich", "pos": "adv", "forms": "határozó – sosem áll a mondat élén",
+      "hu": "ugyanis, tudniillik", "subdeck": "Allgemein",
+      "context": { "sentence": "Bei jeder Entscheidung musst du nämlich auf etwas verzichten.", "highlight": "nämlich", "page": 16 },
+      "morph": ["näm", "-lich"],
+      "morphNote": "A Name (név) tövéből: „név szerint” → tudniillik. Sosem mondatkezdő: az ige után áll, és nem változtat a szórenden. Melléknévként: der nämliche – ugyanaz.",
+      "family": [
+        { "de": "der Name", "hu": "név", "known": true },
+        { "de": "namentlich", "hu": "név szerint; különösen", "known": false },
+        { "de": "denn", "hu": "mert (kötőszó)", "known": true },
+        { "de": "und zwar", "hu": "mégpedig", "known": false }
+      ],
+      "contrast": { "de": "denn", "hu": "mert",
+        "note": "nämlich = határozó a mondat belsejében, utólag indokol (Ich bleibe zu Hause, ich bin nämlich krank). denn = mellérendelő kötőszó, tagmondatot kezd (…, denn ich bin krank).",
+        "items": [
+          { "sentence": "Ich komme später, ich habe ___ noch einen Termin.", "answer": "target", "form": "nämlich" },
+          { "sentence": "Ich komme später, ___ ich habe noch einen Termin.", "answer": "contrast", "form": "denn" }
+        ] },
+      "mnemonics": [
+        "nämlich ~ „name-lich”: nevezetesen, vagyis: tudniillik.",
+        "Sosem elöl: „Ich bin nämlich …” – a nämlich a második sorban áll, mint a magyar „ugyanis”."
+      ]
+    },
+    {
+      "id": "w11", "de": "einsetzen für", "short": "einsetzen", "pos": "verb", "praet": "setzte ein", "perf": "hat eingesetzt",
+      "valence": "etw. (Akk.) für + Akk.", "hu": "bevet, felhasznál, ráfordít (időt, eszközt)", "subdeck": "Allgemein",
+      "context": { "sentence": "Wenn du Zeit auf eine Sache verwendest, hast du dich entschieden, deine Zeit nicht für andere Dinge einzusetzen.", "highlight": "einzusetzen", "page": 16 },
+      "morph": ["ein-", "setz", "-en"],
+      "morphNote": "setzen (tesz, ültet) + ein- (bele): „beletesz” – bevet, ráfordít. Sok jelentés: sich einsetzen für – kiáll vmiért; der Einsatz – bevetés, ráfordítás, tét.",
+      "family": [
+        { "de": "setzen", "hu": "tesz, ültet", "known": true },
+        { "de": "der Einsatz", "hu": "bevetés, ráfordítás; tét", "known": false },
+        { "de": "sich einsetzen für", "hu": "kiáll vmiért", "known": false },
+        { "de": "ersetzen", "hu": "helyettesít, pótol", "known": false }
+      ],
+      "contrast": { "de": "ersetzen", "hu": "pótol, helyettesít",
+        "note": "einsetzen = bevet, felhasznál egy célra (időt, pénzt, embert). ersetzen = pótol, helyettesít. Ugyanaz a tő, más igekötő – az egyik betesz, a másik lecserél.",
+        "items": [
+          { "sentence": "Wir ___ das Geld für neue Werkzeuge ___.", "answer": "target", "form": "setzen … ein" },
+          { "sentence": "Niemand kann diese Ressource ___.", "answer": "contrast", "form": "ersetzen" }
+        ] },
+      "mnemonics": [
+        "ein-setzen = „be-tesz”: beleteszed az idődet – ráfordítod.",
+        "Einsatz = bevetés és a tét a játékban: amit beteszel ide, azt máshova nem tudod betenni."
+      ]
+    },
+    {
+      "id": "w12", "de": "nutzen", "pos": "verb", "praet": "nutzte", "perf": "hat genutzt",
+      "valence": "etw. (Akk.)", "hu": "használ, hasznosít, kihasznál", "subdeck": "Allgemein",
+      "context": { "sentence": "Die meisten Ressourcen können nur einmal genutzt werden.", "highlight": "genutzt", "page": 16 },
+      "morph": ["nutz", "-en"],
+      "morphNote": "Ugyanaz a tő, mint a der Nutzen (haszon) és a nützlich (hasznos). nutzen = kihasznál, hasznosít (lehetőséget, erőforrást); benutzen = konkrét tárgyat használ.",
+      "family": [
+        { "de": "der Nutzen", "hu": "haszon", "known": false },
+        { "de": "nützlich", "hu": "hasznos", "known": true },
+        { "de": "benutzen", "hu": "használ (tárgyat)", "known": true },
+        { "de": "ausnutzen", "hu": "kihasznál (negatívan is)", "known": false },
+        { "de": "die Nutzung", "hu": "használat, hasznosítás", "known": false }
+      ],
+      "contrast": { "de": "benutzen", "hu": "használ (tárgyat)",
+        "note": "nutzen = hasznosít, kihasznál – elvont: Chance, Zeit, Ressource. benutzen = tárgyat használ: Werkzeug, Bus, Toilette.",
+        "items": [
+          { "sentence": "Wir sollten die Zeit sinnvoll ___.", "answer": "target", "form": "nutzen" },
+          { "sentence": "Darf ich kurz dein Handy ___?", "answer": "contrast", "form": "benutzen" }
+        ] },
+      "mnemonics": [
+        "nutzen ~ Nutzen: hasznot húz belőle – hasznosít.",
+        "nutzen = elvont (időt, esélyt); be-nutzen = kézzelfogható (be-le fogsz)."
+      ]
+    },
+    {
+      "id": "w13", "de": "einhergehen mit", "short": "einhergehen", "pos": "verb", "praet": "ging einher", "perf": "ist einhergegangen",
+      "valence": "mit + Dat. · sein-nal!", "hu": "együtt jár (valamivel)", "subdeck": "Allgemein",
+      "context": { "sentence": "Jede Entscheidung geht mit Kosten einher, auch wenn diese nicht mit Geld bezahlt werden.", "highlight": "geht mit Kosten einher", "page": 16 },
+      "morph": ["einher-", "geh", "-en"],
+      "morphNote": "einher (régies: mellette, együtt) + gehen. Elváló: geht … einher, az einher a mondat végén. Perfekt sein-nal. Írott, elemző stílus.",
+      "family": [
+        { "de": "gehen", "hu": "megy", "known": true },
+        { "de": "einher", "hu": "(régies) mellette, együtt", "known": false },
+        { "de": "die Begleiterscheinung", "hu": "kísérőjelenség", "known": false },
+        { "de": "verbunden sein mit", "hu": "összefügg vmivel", "known": false }
+      ],
+      "contrast": { "de": "begleiten", "hu": "kísér",
+        "note": "einhergehen mit = két dolog együtt jár, összefügg (elvont). begleiten = kísér: személy kísér személyt, zene kísér éneket.",
+        "items": [
+          { "sentence": "Wirtschaftswachstum ___ oft mit Umweltverschmutzung ___.", "answer": "target", "form": "geht … einher" },
+          { "sentence": "Er ___ seine Tochter jeden Morgen zur Schule.", "answer": "contrast", "form": "begleitet" }
+        ] },
+      "mnemonics": [
+        "einher-gehen: „együtt-megy” – ami vele jár.",
+        "geht mit Kosten einher = költséggel jár: az einher a végén lezárja a mondatot."
+      ]
+    },
+    {
+      "id": "w14", "de": "sprechen von", "short": "sprechen von", "pos": "verb", "praet": "sprach", "perf": "hat gesprochen",
+      "valence": "von + Dat.", "hu": "beszél valamiről; úgy nevezi", "subdeck": "Allgemein",
+      "context": { "sentence": "Wirtschaftswissenschaftler sprechen hier von Opportunitätskosten.", "highlight": "sprechen hier von", "page": 16 },
+      "morph": ["sprech", "-en", "von"],
+      "morphNote": "sprechen von + Dat. = úgy nevez, ezt a fogalmat használja rá. sprechen über + Akk. = beszélget egy témáról. A vonzat változtatja a jelentést.",
+      "family": [
+        { "de": "sprechen", "hu": "beszél", "known": true },
+        { "de": "das Gespräch", "hu": "beszélgetés", "known": true },
+        { "de": "besprechen", "hu": "megbeszél", "known": false },
+        { "de": "ansprechen", "hu": "megszólít; szóba hoz", "known": false }
+      ],
+      "contrast": { "de": "sprechen über", "hu": "beszélget valamiről (téma)",
+        "note": "von + Dat.: így nevezi, ezt a szakszót használja (Ökonomen sprechen von Knappheit). über + Akk.: egy témáról beszélget.",
+        "items": [
+          { "sentence": "Ökonomen sprechen hier ___ Opportunitätskosten.", "answer": "target", "form": "von" },
+          { "sentence": "Wir haben lange ___ das Problem gesprochen.", "answer": "contrast", "form": "über" }
+        ] },
+      "mnemonics": [
+        "sprechen VON: „erről így beszél” – aminek nevezi.",
+        "von Opportunitätskosten sprechen = a szakszó bevezetése: „a közgazdászok itt …-ről beszélnek”."
+      ]
+    },
+    {
+      "id": "w15", "de": "kurzfristig", "pos": "adj", "forms": "kurzfristig – kurzfristiger – am kurzfristigsten",
+      "hu": "rövid távú; rövid határidővel, hirtelen", "subdeck": "Fachwortschatz",
+      "context": { "sentence": "Oder du musst dich zwischen einem kurzfristigen und einem langfristigen Gewinn entscheiden.", "highlight": "kurzfristigen", "page": 16 },
+      "morph": ["kurz", "frist", "-ig"],
+      "morphNote": "kurz + die Frist (határidő) + -ig: „rövid határidejű”. Két jelentés: rövid távú (Gewinn) és rövid határidővel, az utolsó pillanatban (kurzfristig absagen).",
+      "family": [
+        { "de": "kurz", "hu": "rövid", "known": true },
+        { "de": "die Frist", "hu": "határidő", "known": false },
+        { "de": "mittelfristig", "hu": "középtávú", "known": false },
+        { "de": "fristlos", "hu": "azonnali hatályú", "known": false }
+      ],
+      "contrast": { "de": "kurzzeitig", "hu": "rövid ideig tartó",
+        "note": "kurzfristig = rövid távra szóló, vagy rövid határidővel, hirtelen. kurzzeitig = rövid ideig tartó (kurzzeitig gesperrt – rövid időre lezárva).",
+        "items": [
+          { "sentence": "Sie musste den Termin ___ absagen.", "answer": "target", "form": "kurzfristig" },
+          { "sentence": "Die Straße war ___ gesperrt.", "answer": "contrast", "form": "kurzzeitig" }
+        ] },
+      "mnemonics": [
+        "kurz + Frist = rövid határidő: rövid távú.",
+        "kurzfristig absagen – az utolsó pillanatban lemond: a „rövid határidő” mindkét jelentést adja."
+      ]
+    },
+    {
+      "id": "w16", "de": "langfristig", "pos": "adj", "forms": "langfristig – langfristiger – am langfristigsten",
+      "hu": "hosszú távú", "subdeck": "Fachwortschatz",
+      "context": { "sentence": "Oder du musst dich zwischen einem kurzfristigen und einem langfristigen Gewinn entscheiden.", "highlight": "langfristigen", "page": 16 },
+      "morph": ["lang", "frist", "-ig"],
+      "morphNote": "lang + Frist + -ig. Határozóként is: langfristig planen – hosszú távra tervez. A -fristig sor: kurz-, mittel-, langfristig.",
+      "family": [
+        { "de": "lang", "hu": "hosszú", "known": true },
+        { "de": "die Frist", "hu": "határidő", "known": false },
+        { "de": "kurzfristig", "hu": "rövid távú", "known": false },
+        { "de": "die Langzeitstudie", "hu": "hosszú távú vizsgálat", "known": false }
+      ],
+      "contrast": { "de": "langwierig", "hu": "hosszadalmas, vontatott",
+        "note": "langfristig = hosszú távú (időhorizont, tervezés). langwierig = hosszadalmas, fárasztóan elhúzódó folyamat.",
+        "items": [
+          { "sentence": "Wir brauchen eine ___ Strategie.", "answer": "target", "form": "langfristige" },
+          { "sentence": "Die Verhandlungen waren ___ und schwierig.", "answer": "contrast", "form": "langwierig" }
+        ] },
+      "mnemonics": [
+        "lang + Frist: hosszú határidő – hosszú távú.",
+        "langfristig ↔ kurzfristig: a Gewinn kétféle – ma vagy később."
+      ]
+    },
+    {
+      "id": "w17", "de": "Nutzen", "article": "der", "plural": "–", "pos": "noun",
+      "hu": "haszon, hasznosság (közgazdasági)", "subdeck": "Fachwortschatz",
+      "collocation": "csak egyes számban · von Nutzen sein – hasznos · Kosten-Nutzen-Analyse",
+      "context": { "sentence": "Der Nutzen einer Sache ist für jede Person verschieden.", "highlight": "Nutzen", "page": 17 },
+      "morph": ["Nutz", "-en"],
+      "morphNote": "Az ige tövéből képzett főnév: nutzen → der Nutzen. Angolul utility – a közgazdaságtan alapfogalma. Grenznutzen = határhaszon.",
+      "family": [
+        { "de": "nutzen", "hu": "használ, hasznosít", "known": false },
+        { "de": "nützlich", "hu": "hasznos", "known": true },
+        { "de": "der Grenznutzen", "hu": "határhaszon", "known": false },
+        { "de": "die Kosten-Nutzen-Analyse", "hu": "költség–haszon elemzés", "known": false }
+      ],
+      "contrast": { "de": "Vorteil", "article": "der", "hu": "előny",
+        "note": "Nutzen = a haszon, amit valami hoz – mérhető, közgazdasági. Vorteil = előny másokhoz vagy más lehetőséghez képest.",
+        "items": [
+          { "sentence": "Der ___ einer Sache ist für jeden verschieden.", "answer": "target", "form": "Nutzen" },
+          { "sentence": "Der ___ dieses Modells ist seine Einfachheit.", "answer": "contrast", "form": "Vorteil" }
+        ] },
+      "mnemonics": [
+        "Nutzen ~ „nyűtt”: amit használsz, elnyűvöd, mert hasznot hoz.",
+        "Kosten-Nutzen: költség–haszon – a Nutzen mindig a költséggel szemben áll."
+      ]
+    },
+    {
+      "id": "w18", "de": "Nützlichkeit", "article": "die", "plural": "–", "pos": "noun",
+      "hu": "hasznosság (általánosan)", "subdeck": "Allgemein",
+      "context": { "sentence": "Die Nützlichkeit eines Werkzeugs hängt davon ab, wofür man es benutzt.", "highlight": "Nützlichkeit", "page": null },
+      "morph": ["nütz", "-lich", "-keit"],
+      "morphNote": "Három lépcső egy tőből: nutz → nützlich (melléknév, umlauttal) → Nützlichkeit (-keit: tulajdonság-főnév, mint a Möglichkeit).",
+      "family": [
+        { "de": "nützlich", "hu": "hasznos", "known": true },
+        { "de": "der Nutzen", "hu": "haszon (közgazdasági)", "known": false },
+        { "de": "unnütz", "hu": "haszontalan", "known": false },
+        { "de": "die Möglichkeit", "hu": "lehetőség (ugyanaz a -keit)", "known": true }
+      ],
+      "contrast": { "de": "Nutzen", "article": "der", "hu": "haszon (közgazdasági)",
+        "note": "Nützlichkeit = hétköznapi hasznosság mint tulajdonság. Nutzen = a haszon mint közgazdasági mennyiség (utility), amit mérni, összehasonlítani lehet.",
+        "items": [
+          { "sentence": "Die ___ eines Messers hängt vom Zweck ab.", "answer": "target", "form": "Nützlichkeit" },
+          { "sentence": "Der ___ dieser Investition ist schwer zu messen.", "answer": "contrast", "form": "Nutzen" }
+        ] },
+      "mnemonics": [
+        "nütz-lich-keit: hasznos-ság – a -keit ugyanaz, mint a Möglichkeit végén.",
+        "Umlaut a melléknévben: nutzen → nützlich, mint Kunst → künstlich."
+      ]
+    },
+    {
+      "id": "w19", "de": "unerwartet", "pos": "adj", "forms": "un- + erwartet (Partizip II) · ragozódik: unerwartete Entscheidungen",
+      "hu": "váratlan", "subdeck": "Allgemein",
+      "context": { "sentence": "Die Menschen sind kompliziert und treffen daher manchmal unerwartete Entscheidungen.", "highlight": "unerwartete", "page": 17 },
+      "morph": ["un-", "erwart", "-et"],
+      "morphNote": "erwarten (vár, számít rá) → erwartet → un-erwartet: nem várt. Partizip II melléknévként, un- tagadással – mint unbekannt, ungeplant.",
+      "family": [
+        { "de": "warten", "hu": "vár", "known": true },
+        { "de": "erwarten", "hu": "elvár, számít vmire", "known": false },
+        { "de": "die Erwartung", "hu": "várakozás, elvárás", "known": false },
+        { "de": "unerwünscht", "hu": "nemkívánatos", "known": false }
+      ],
+      "contrast": { "de": "überraschend", "hu": "meglepő",
+        "note": "unerwartet = nem számítottak rá – semleges tény. überraschend = meglepő – érzelmi hatás, csodálkozás.",
+        "items": [
+          { "sentence": "Der ___ Regen hat die Ernte gerettet.", "answer": "target", "form": "unerwartete" },
+          { "sentence": "Das Ergebnis war ___ gut.", "answer": "contrast", "form": "überraschend" }
+        ] },
+      "mnemonics": [
+        "un-erwart-et: „nem-várt” – szó szerint ugyanaz, mint a magyar.",
+        "Erwartung = várakozás; unerwartet = amire nem volt Erwartung."
+      ]
+    },
+    {
+      "id": "w20", "de": "Jagd", "article": "die", "plural": "Jagden", "pos": "noun",
+      "hu": "vadászat", "subdeck": "Allgemein",
+      "collocation": "auf die Jagd gehen – vadászni megy · die Jagd nach + Dat. – hajsza vmi után",
+      "context": { "sentence": "Igitt! Ich hasse Pilze. Ich gehe mal lieber auf die Jagd.", "highlight": "Jagd", "page": 17 },
+      "morph": ["Jag", "-d"],
+      "morphNote": "jagen (vadászik, üldöz) → die Jagd. Kifejezés: auf die Jagd gehen. Átvitt értelemben: die Jagd nach Gewinn – hajsza a nyereség után.",
+      "family": [
+        { "de": "jagen", "hu": "vadászik; üldöz", "known": false },
+        { "de": "der Jäger", "hu": "vadász", "known": false },
+        { "de": "verjagen", "hu": "elkerget", "known": false },
+        { "de": "die Schnitzeljagd", "hu": "kincskereső játék", "known": false }
+      ],
+      "contrast": { "de": "Suche", "article": "die", "hu": "keresés",
+        "note": "Jagd = vadászat, hajsza – aktív üldözés. Suche = keresés (nach + Dat.) – nyugodtabb, módszeres.",
+        "items": [
+          { "sentence": "Die Männer gingen früh auf die ___.", "answer": "target", "form": "Jagd" },
+          { "sentence": "Die ___ nach einer Lösung dauert an.", "answer": "contrast", "form": "Suche" }
+        ] },
+      "mnemonics": [
+        "Jagd ~ „jaj, gyerünk!”: indul a vadászat.",
+        "jagen = vadászik és üldöz – a Jagd nem csak az erdőben van (Jagd nach Gewinn)."
+      ]
+    },
+    {
+      "id": "w21", "de": "bezeichnen als", "short": "bezeichnen", "pos": "verb", "praet": "bezeichnete", "perf": "hat bezeichnet",
+      "valence": "etw./jmdn. (Akk.) als + Akk. · nem elváló", "hu": "nevez valaminek, megjelöl", "subdeck": "Allgemein",
+      "context": { "sentence": "Das wird als Produktion bezeichnet.", "highlight": "als Produktion bezeichnet", "page": 18 },
+      "morph": ["be-", "zeichn", "-en"],
+      "morphNote": "zeichnen (rajzol, jelöl) + be-: „jellel ellát” → megnevez. A könyv definíciós képlete: … wird als … bezeichnet. Nem elváló ige!",
+      "family": [
+        { "de": "zeichnen", "hu": "rajzol", "known": true },
+        { "de": "das Zeichen", "hu": "jel", "known": true },
+        { "de": "die Bezeichnung", "hu": "megnevezés, elnevezés", "known": false },
+        { "de": "kennzeichnen", "hu": "megjelöl, jellemez", "known": false },
+        { "de": "auszeichnen", "hu": "kitüntet", "known": false }
+      ],
+      "contrast": { "de": "nennen", "hu": "nevez, hív",
+        "note": "bezeichnen als = szakszóval megnevez, besorol – hivatalos, írott, mindig als-szal. nennen = hív, nevez – hétköznapi, két tárgyesettel, als nélkül.",
+        "items": [
+          { "sentence": "Diese Produktion wird ___ Überschuss ___.", "answer": "target", "form": "als … bezeichnet" },
+          { "sentence": "Wir ___ ihn einfach Tom.", "answer": "contrast", "form": "nennen" }
+        ] },
+      "mnemonics": [
+        "be-zeichnen: „jelet tesz rá” – megnevezi, felcímkézi.",
+        "wird als … bezeichnet = „ezt nevezzük …-nak”: a könyv minden definíciója ezzel indul."
+      ]
+    },
+    {
+      "id": "w22", "de": "einteilen in", "short": "einteilen", "pos": "verb", "praet": "teilte ein", "perf": "hat eingeteilt",
+      "valence": "etw. (Akk.) in + Akk.", "hu": "feloszt, beoszt (részekre, szakaszokra)", "subdeck": "Allgemein",
+      "context": { "sentence": "Wirtschaftswissenschaftler teilen den Prozess der Produktion in der Regel in vier Abschnitte ein.", "highlight": "in vier Abschnitte ein", "page": 18 },
+      "morph": ["ein-", "teil", "-en"],
+      "morphNote": "teilen + ein- (be-): be-oszt. Vonzat: in + Akk. (mire osztja). Testvérei: aufteilen (fel-oszt emberek között), verteilen (szét-oszt), zuteilen (kioszt vkinek).",
+      "family": [
+        { "de": "teilen", "hu": "oszt", "known": true },
+        { "de": "aufteilen", "hu": "feloszt (emberek között)", "known": true },
+        { "de": "verteilen", "hu": "szétoszt", "known": false },
+        { "de": "die Einteilung", "hu": "beosztás", "known": false },
+        { "de": "zuteilen", "hu": "kioszt, kiutal", "known": false }
+      ],
+      "contrast": { "de": "aufteilen", "hu": "feloszt (emberek között)",
+        "note": "einteilen in = egészet részekre, kategóriákra, időszakokra oszt – be-oszt (die Zeit einteilen). aufteilen unter = emberek között feloszt.",
+        "items": [
+          { "sentence": "Ich muss meine Zeit besser ___.", "answer": "target", "form": "einteilen" },
+          { "sentence": "Wir haben den Kuchen unter uns ___.", "answer": "contrast", "form": "aufgeteilt" }
+        ] },
+      "mnemonics": [
+        "ein-teilen = „be-oszt”: beosztod az idődet, szakaszokba.",
+        "einteilen IN vier Abschnitte – az in mutatja, mibe osztod."
+      ]
+    },
+    {
+      "id": "w23", "de": "Abschnitt", "article": "der", "plural": "Abschnitte", "pos": "noun",
+      "hu": "szakasz, rész", "subdeck": "Allgemein",
+      "context": { "sentence": "Wirtschaftswissenschaftler teilen den Prozess der Produktion in der Regel in vier Abschnitte ein.", "highlight": "Abschnitte", "page": 18 },
+      "morph": ["Ab-", "schnitt"],
+      "morphNote": "abschneiden (levág) → der Abschnitt: „levágott darab”. Szövegben: bekezdés, szakasz; időben: Zeitabschnitt; folyamatban: fázis.",
+      "family": [
+        { "de": "schneiden", "hu": "vág", "known": true },
+        { "de": "der Schnitt", "hu": "vágás; átlag", "known": false },
+        { "de": "der Zeitabschnitt", "hu": "időszak", "known": false },
+        { "de": "der Ausschnitt", "hu": "kivágás, részlet", "known": false },
+        { "de": "die Phase", "hu": "fázis", "known": true }
+      ],
+      "contrast": { "de": "Ausschnitt", "article": "der", "hu": "kivágott részlet",
+        "note": "Abschnitt = egy egész egymás után következő szakasza. Ausschnitt = kivágott részlet (kép, szöveg része) – és: dekoltázs.",
+        "items": [
+          { "sentence": "Der zweite ___ des Textes ist schwierig.", "answer": "target", "form": "Abschnitt" },
+          { "sentence": "Das Bild zeigt nur einen ___ der Stadt.", "answer": "contrast", "form": "Ausschnitt" }
+        ] },
+      "mnemonics": [
+        "Ab-schnitt: „le-vágás” – a folyamat egy levágott szelete.",
+        "Schnitt = vágás, mint a szalámi: minden Abschnitt egy szelet."
+      ]
+    },
+    {
+      "id": "w24", "de": "Betätigung", "article": "die", "plural": "Betätigungen", "pos": "noun",
+      "hu": "tevékenység", "subdeck": "Allgemein",
+      "context": { "sentence": "Wirtschaftswissenschaftler bezeichnen jede Betätigung, die zur Herstellung einer Sache notwendig ist, als Arbeit.", "highlight": "Betätigung", "page": 19 },
+      "morph": ["Be-", "tätig", "-ung"],
+      "morphNote": "die Tat (tett) → tätig (tevékeny) → sich betätigen (tevékenykedik) → die Betätigung. Hétköznapibb testvére: die Tätigkeit.",
+      "family": [
+        { "de": "die Tat", "hu": "tett", "known": false },
+        { "de": "tätig sein", "hu": "tevékenykedik, dolgozik", "known": false },
+        { "de": "die Tätigkeit", "hu": "tevékenység, munkakör", "known": false },
+        { "de": "sich betätigen", "hu": "tevékenykedik (pl. sportol)", "known": false },
+        { "de": "der Täter", "hu": "elkövető", "known": false }
+      ],
+      "contrast": { "de": "Tätigkeit", "article": "die", "hu": "tevékenység, munkakör",
+        "note": "Betätigung = a tevékenykedés maga, aktív, gyakran testi vagy sportos (sportliche Betätigung). Tätigkeit = tevékenység, munkakör, foglalkozás – hétköznapibb.",
+        "items": [
+          { "sentence": "Regelmäßige sportliche ___ hält gesund.", "answer": "target", "form": "Betätigung" },
+          { "sentence": "Welche ___ übst du beruflich aus?", "answer": "contrast", "form": "Tätigkeit" }
+        ] },
+      "mnemonics": [
+        "Tat = tett; be-tät-igung = „tettben levés” – tevékenység.",
+        "sich betätigen = tevékenykedik; a Betätigung ennek a főneve."
+      ]
+    },
+    {
+      "id": "w25", "de": "umfassen", "pos": "verb", "praet": "umfasste", "perf": "hat umfasst",
+      "valence": "etw. (Akk.) · nem elváló", "hu": "magában foglal, felölel", "subdeck": "Allgemein",
+      "context": { "sentence": "Arbeit umfasst hier nicht nur die körperliche Arbeit, sondern auch alle anderen erforderlichen Aufgaben.", "highlight": "umfasst", "page": 19 },
+      "morph": ["um-", "fass", "-en"],
+      "morphNote": "fassen (megfog, befogad) + um- (körül): körbefog → magában foglal. Nem elváló (umfasst, nem „fasst um”). Melléknév: umfassend – átfogó.",
+      "family": [
+        { "de": "fassen", "hu": "megfog, befogad", "known": true },
+        { "de": "umfassend", "hu": "átfogó", "known": false },
+        { "de": "der Umfang", "hu": "terjedelem, kerület", "known": false },
+        { "de": "erfassen", "hu": "felfog; rögzít (adatot)", "known": false },
+        { "de": "zusammenfassen", "hu": "összefoglal", "known": false }
+      ],
+      "contrast": { "de": "beinhalten", "hu": "tartalmaz",
+        "note": "umfassen = felölel, kiterjed valamire – tágabb kör, összetevők. beinhalten = tartalmaz egy konkrét elemet.",
+        "items": [
+          { "sentence": "Das Projekt ___ drei Phasen.", "answer": "target", "form": "umfasst" },
+          { "sentence": "Der Preis ___ auch das Frühstück.", "answer": "contrast", "form": "beinhaltet" }
+        ] },
+      "mnemonics": [
+        "um-fassen: „körül-fog” – ami mindent körbefog, az magában foglal.",
+        "Umfang = kerület: az umfassen körberajzolja, mi tartozik hozzá."
+      ]
+    },
+    {
+      "id": "w26", "de": "effizient", "pos": "adj", "forms": "effizient – effizienter – am effizientesten",
+      "hu": "hatékony", "subdeck": "Fachwortschatz",
+      "context": { "sentence": "Werkzeuge und Technologien helfen uns dabei, schneller, besser und sicherer, kurz gesagt: effizienter zu arbeiten.", "highlight": "effizienter", "page": 19 },
+      "morph": ["effizi", "-ent"],
+      "morphNote": "Latin efficere (véghezvisz). die Effizienz – hatékonyság. Ne keverd: effektiv/wirksam = hatásos (eléri a célt); effizient = hatékony (kevés ráfordítással).",
+      "family": [
+        { "de": "die Effizienz", "hu": "hatékonyság", "known": false },
+        { "de": "effektiv", "hu": "hatásos; tényleges", "known": false },
+        { "de": "wirksam", "hu": "hatásos", "known": false },
+        { "de": "die Wirkung", "hu": "hatás", "known": false },
+        { "de": "ineffizient", "hu": "nem hatékony", "known": false }
+      ],
+      "contrast": { "de": "effektiv", "hu": "hatásos",
+        "note": "effizient = hatékony: kevés ráfordítással éri el a célt. effektiv = hatásos: egyáltalán eléri a célt (és: tényleges, valós).",
+        "items": [
+          { "sentence": "Die neue Maschine arbeitet viel ___.", "answer": "target", "form": "effizienter" },
+          { "sentence": "Das Medikament ist ___, aber teuer.", "answer": "contrast", "form": "effektiv" }
+        ] },
+      "mnemonics": [
+        "effizient ~ „efficiens”: kevés ráfordítással sokat – hatékony.",
+        "Effizienz vs. Effekt: az egyik a „hogyan”, a másik a „megvan-e”."
+      ]
+    },
+    {
+      "id": "w27", "de": "erfinden", "pos": "verb", "praet": "erfand", "perf": "hat erfunden",
+      "valence": "etw. (Akk.)", "hu": "feltalál; kitalál", "subdeck": "Allgemein",
+      "context": { "sentence": "Ich habe schon viele tolle Dinge erfunden. Meine letzte Kreation heißt … TÜR!", "highlight": "erfunden", "page": 20 },
+      "morph": ["er-", "find", "-en"],
+      "morphNote": "finden (talál) + er-: „kitalál” → feltalál. Ugyanúgy ragozódik, mint a finden: fand → erfand, gefunden → erfunden. Negatívan: kitalál, hazudik.",
+      "family": [
+        { "de": "finden", "hu": "talál", "known": true },
+        { "de": "die Erfindung", "hu": "találmány", "known": false },
+        { "de": "der Erfinder", "hu": "feltaláló", "known": false },
+        { "de": "entdecken", "hu": "felfedez", "known": false },
+        { "de": "herausfinden", "hu": "kiderít", "known": false }
+      ],
+      "contrast": { "de": "entdecken", "hu": "felfedez",
+        "note": "erfinden = feltalál, létrehoz, ami korábban nem létezett (Rad, Telefon). entdecken = felfedez, ami már létezett, csak nem tudtunk róla (Amerika, Bakterien).",
+        "items": [
+          { "sentence": "Wer hat das Telefon ___?", "answer": "target", "form": "erfunden" },
+          { "sentence": "Kolumbus hat Amerika ___.", "answer": "contrast", "form": "entdeckt" }
+        ] },
+      "mnemonics": [
+        "er-finden: „rá-talál” a megoldásra – feltalál.",
+        "Erfindung vs. Entdeckung: a kereket feltalálták, Amerikát felfedezték."
+      ]
+    },
+    {
+      "id": "w28", "de": "schaffen", "pos": "verb", "praet": "schaffte", "perf": "hat geschafft",
+      "valence": "etw. (Akk.) · gyenge ragozás!", "hu": "megcsinál, elér, elkészít (teljesítményt)", "subdeck": "Allgemein",
+      "context": { "sentence": "Ich schaffe jetzt zwei Hemden in weniger als einer Stunde.", "highlight": "schaffe", "page": 20 },
+      "morph": ["schaff", "-en"],
+      "morphNote": "Két ige egy alakban! schaffen (megcsinál, elér): schaffte, hat geschafft – gyenge. schaffen (teremt, alkot): schuf, hat geschaffen – erős (Arbeitsplätze schaffen).",
+      "family": [
+        { "de": "schaffen – schuf – geschaffen", "hu": "teremt, alkot", "known": true },
+        { "de": "es schaffen", "hu": "sikerül neki", "known": false },
+        { "de": "anschaffen", "hu": "beszerez", "known": true },
+        { "de": "abschaffen", "hu": "megszüntet", "known": true },
+        { "de": "geschafft sein", "hu": "kimerült", "known": false }
+      ],
+      "contrast": { "de": "schaffen (schuf)", "hu": "teremt, alkot",
+        "note": "Gyenge ragozás (schaffte, geschafft) = megcsinál, teljesít, elér. Erős ragozás (schuf, geschaffen) = teremt, alkot. Egy szó, két ige.",
+        "items": [
+          { "sentence": "Ich habe die Prüfung ___!", "answer": "target", "form": "geschafft" },
+          { "sentence": "Der Staat hat neue Arbeitsplätze ___.", "answer": "contrast", "form": "geschaffen" }
+        ] },
+      "mnemonics": [
+        "schaffen ~ „sikerül”: Ich hab's geschafft! – megcsináltam.",
+        "geschafft (megcsinálta) – geschaffen (megteremtette): az -en a nagyobb tett."
+      ]
+    },
+    {
+      "id": "w29", "de": "besonders", "pos": "adv", "forms": "nicht besonders – nem különösebben · melléknévként: besondere/r/s",
+      "hu": "különösen; (tagadva) különösebben", "subdeck": "Allgemein",
+      "context": { "sentence": "Das wäre nicht besonders effizient.", "highlight": "besonders", "page": 20 },
+      "morph": ["besonder", "-s"],
+      "morphNote": "besondere (különleges) + -s határozói végződés. Tagadva: nicht besonders = nem különösebben – enyhítő tagadás. Ne keverd: insbesondere – kiváltképp.",
+      "family": [
+        { "de": "besondere/r/s", "hu": "különleges", "known": false },
+        { "de": "sonst", "hu": "különben, egyébként", "known": true },
+        { "de": "die Besonderheit", "hu": "különlegesség", "known": false },
+        { "de": "insbesondere", "hu": "kiváltképp, főleg", "known": false }
+      ],
+      "contrast": { "de": "insbesondere", "hu": "kiváltképp, főleg",
+        "note": "besonders = különösen, nagyon – fokoz (besonders gut). insbesondere = kiváltképp – kiemel egy elemet a többi közül.",
+        "items": [
+          { "sentence": "Das ist nicht ___ effizient.", "answer": "target", "form": "besonders" },
+          { "sentence": "Viele Länder, ___ die kleinen, leiden darunter.", "answer": "contrast", "form": "insbesondere" }
+        ] },
+      "mnemonics": [
+        "be-sonder-s ~ „sonder”: külön – különösen.",
+        "nicht besonders = „nem különösebben” – a németben is ugyanúgy enyhít."
+      ]
+    },
+    {
+      "id": "w30", "de": "Grundlage", "article": "die", "plural": "Grundlagen", "pos": "noun",
+      "hu": "alap, alapja valaminek", "subdeck": "Allgemein",
+      "collocation": "die Grundlage bilden/schaffen für + Akk. · grundlegend – alapvető",
+      "context": { "sentence": "Spezialisierung und Handel bilden die Grundlage aller Wirtschaftssysteme, egal wie groß oder klein sie sind.", "highlight": "Grundlage", "page": 21 },
+      "morph": ["Grund", "lage"],
+      "morphNote": "Grund (alap, talaj) + Lage (fekvés, helyzet): „alaphelyzet”. Többes: die Grundlagen der Ökonomie – az alapok. Melléknév: grundlegend.",
+      "family": [
+        { "de": "der Grund", "hu": "alap; ok", "known": true },
+        { "de": "die Lage", "hu": "fekvés, helyzet", "known": true },
+        { "de": "grundlegend", "hu": "alapvető", "known": false },
+        { "de": "der Grundsatz", "hu": "alapelv", "known": false },
+        { "de": "die Grundlagenforschung", "hu": "alapkutatás", "known": false }
+      ],
+      "contrast": { "de": "Basis", "article": "die", "hu": "bázis, alap",
+        "note": "Grundlage = német szó, elvont alap (tudásé, rendszeré, döntésé). Basis = idegen szó, gyakran konkrétabb vagy szervezeti: Basis einer Partei, Datenbasis, Basislager.",
+        "items": [
+          { "sentence": "Vertrauen ist die ___ jeder Zusammenarbeit.", "answer": "target", "form": "Grundlage" },
+          { "sentence": "Das Lager dient als ___ für die Expedition.", "answer": "contrast", "form": "Basis" }
+        ] },
+      "mnemonics": [
+        "Grund + Lage = „alap-helyzet”: amire minden ráépül.",
+        "die Grundlage bilden = alapját képezi: a Grundlage mindig bilden-nel jár."
+      ]
+    },
+    {
+      "id": "w31", "de": "sich spezialisieren auf", "short": "spezialisieren", "pos": "verb", "praet": "spezialisierte sich", "perf": "hat sich spezialisiert",
+      "valence": "auf + Akk. · mellékmondattal: darauf, … zu + Inf.", "hu": "szakosodik (valamire)", "subdeck": "Fachwortschatz",
+      "context": { "sentence": "Manche Menschen sind darauf spezialisiert, Güter zu sammeln oder zu produzieren.", "highlight": "darauf spezialisiert", "page": 20 },
+      "morph": ["spezial", "-isier", "-en"],
+      "morphNote": "speziell + -isieren (igeképző idegen szavakon: organisieren, kritisieren). Visszaható: sich spezialisieren auf + Akk. Ha a tárgy mellékmondat: darauf … zu + Inf.",
+      "family": [
+        { "de": "speziell", "hu": "különleges, speciális", "known": false },
+        { "de": "die Spezialisierung", "hu": "specializáció", "known": false },
+        { "de": "der Spezialist", "hu": "szakértő", "known": false },
+        { "de": "die Spezialität", "hu": "specialitás", "known": false }
+      ],
+      "contrast": { "de": "sich konzentrieren auf", "hu": "összpontosít valamire",
+        "note": "sich spezialisieren auf = tartósan szakosodik egy területre (szakma, termelés). sich konzentrieren auf = összpontosít, a figyelmét egy feladatra irányítja – most.",
+        "items": [
+          { "sentence": "Der Arzt hat sich ___ Kinderheilkunde ___.", "answer": "target", "form": "auf … spezialisiert" },
+          { "sentence": "Bitte ___ dich ___ deine Arbeit.", "answer": "contrast", "form": "konzentrier … auf" }
+        ] },
+      "mnemonics": [
+        "spezial-isieren: „speciálissá” teszi magát egy területen – szakosodik.",
+        "darauf spezialisiert = „arra szakosodott”: az auf a darauf-ban bújik."
+      ]
+    },
+    {
+      "id": "w32", "de": "Dienstleistung", "article": "die", "plural": "Dienstleistungen", "pos": "noun",
+      "hu": "szolgáltatás", "subdeck": "Fachwortschatz",
+      "collocation": "Güter und Dienstleistungen – termékek és szolgáltatások",
+      "context": { "sentence": "Manche Menschen sind darauf spezialisiert, etwas für andere zu tun. Diese Berufe heißen Dienstleistungen.", "highlight": "Dienstleistungen", "page": 20 },
+      "morph": ["Dienst", "leist", "-ung"],
+      "morphNote": "Dienst (szolgálat) + leisten (teljesít, nyújt) + -ung: „szolgálatnyújtás”. A közgazdaságtan párja: Güter (tárgyak) és Dienstleistungen (szolgálatok).",
+      "family": [
+        { "de": "der Dienst", "hu": "szolgálat", "known": false },
+        { "de": "dienen", "hu": "szolgál", "known": false },
+        { "de": "leisten", "hu": "teljesít, nyújt", "known": false },
+        { "de": "die Leistung", "hu": "teljesítmény", "known": false },
+        { "de": "der Dienstleister", "hu": "szolgáltató", "known": false }
+      ],
+      "contrast": { "de": "Dienst", "article": "der", "hu": "szolgálat, ügyelet",
+        "note": "Dienstleistung = a szolgáltatás mint gazdasági termék (fodrász, bank, tanítás). Dienst = szolgálat, ügyelet, munkabeosztás: im Dienst sein, der Kundendienst.",
+        "items": [
+          { "sentence": "Friseure bieten eine ___ an.", "answer": "target", "form": "Dienstleistung" },
+          { "sentence": "Der Arzt hat heute Nacht ___.", "answer": "contrast", "form": "Dienst" }
+        ] },
+      "mnemonics": [
+        "Dienst + Leistung = „szolgálat-teljesítés”: szolgáltatás.",
+        "Güter und Dienstleistungen – a gazdaság két fele: tárgyak és szolgálatok."
+      ]
+    },
+    {
+      "id": "w33", "de": "nennen", "pos": "verb", "praet": "nannte", "perf": "hat genannt",
+      "valence": "jmdn./etw. (Akk.) + Akk. – két tárgyeset, als nélkül", "hu": "nevez, hív (valaminek)", "subdeck": "Allgemein",
+      "context": { "sentence": "Wirtschaftswissenschaftler nennen diese Teilung von Aufgaben Spezialisierung.", "highlight": "nennen", "page": 20 },
+      "morph": ["nenn", "-en"],
+      "morphNote": "Vegyes ragozás: nennen – nannte – genannt, pont mint kennen – kannte – gekannt. Két tárgyeset, als nélkül: Sie nennen es Spezialisierung.",
+      "family": [
+        { "de": "der Name", "hu": "név", "known": true },
+        { "de": "kennen", "hu": "ismer", "known": true },
+        { "de": "benennen", "hu": "elnevez", "known": false },
+        { "de": "sogenannt", "hu": "úgynevezett", "known": false },
+        { "de": "die Nennung", "hu": "említés", "known": false }
+      ],
+      "contrast": { "de": "heißen", "hu": "hívják, a neve",
+        "note": "nennen = valaki nevez valamit – tárgyas (Wir nennen ihn Tom). heißen = valaminek hívják – tárgyatlan (Er heißt Tom; Diese Berufe heißen Dienstleistungen).",
+        "items": [
+          { "sentence": "Ökonomen ___ das Spezialisierung.", "answer": "target", "form": "nennen" },
+          { "sentence": "Diese Berufe ___ Dienstleistungen.", "answer": "contrast", "form": "heißen" }
+        ] },
+      "mnemonics": [
+        "nennen ~ „nevez”: ugyanaz az n-n a magyarban is.",
+        "nennen – nannte – genannt: ugyanúgy megy, mint kennen – kannte – gekannt."
+      ]
+    },
+    {
+      "id": "w34", "de": "Überschuss", "article": "der", "plural": "Überschüsse", "pos": "noun",
+      "hu": "többlet, felesleg", "subdeck": "Fachwortschatz",
+      "collocation": "ellentéte: das Defizit · der Handelsüberschuss – kereskedelmi többlet",
+      "context": { "sentence": "Diese zusätzliche Produktion wird als Überschuss bezeichnet.", "highlight": "Überschuss", "page": 20 },
+      "morph": ["Über-", "schuss"],
+      "morphNote": "über (fölött) + Schuss (lövés, löket): ami túlcsordul. Ellentéte: das Defizit. Melléknév: überschüssig – fölös.",
+      "family": [
+        { "de": "schießen", "hu": "lő", "known": true },
+        { "de": "der Schuss", "hu": "lövés; löket", "known": false },
+        { "de": "überschüssig", "hu": "fölös, többlet-", "known": false },
+        { "de": "der Handelsüberschuss", "hu": "kereskedelmi többlet", "known": false },
+        { "de": "das Defizit", "hu": "hiány", "known": true }
+      ],
+      "contrast": { "de": "Überfluss", "article": "der", "hu": "bőség",
+        "note": "Überschuss = többlet, ami a szükségleten felül marad – mérhető, gazdasági. Überfluss = bőség, túl sok van valamiből (im Überfluss leben).",
+        "items": [
+          { "sentence": "Der ___ an Fischen wurde getauscht.", "answer": "target", "form": "Überschuss" },
+          { "sentence": "In reichen Ländern leben viele im ___.", "answer": "contrast", "form": "Überfluss" }
+        ] },
+      "mnemonics": [
+        "Über-schuss: „túl-lövés” – amit túllőttél a szükségleten, az a többlet.",
+        "Überschuss ↔ Defizit: többlet és hiány – a mérleg két oldala."
+      ]
+    },
+    {
+      "id": "w35", "de": "zusätzlich", "pos": "adj", "forms": "melléknév és határozó · zusätzlich zu + Dat. – vmin felül",
+      "hu": "további, pót-, kiegészítő; ráadásul", "subdeck": "Allgemein",
+      "context": { "sentence": "Diese zusätzliche Produktion wird als Überschuss bezeichnet.", "highlight": "zusätzliche", "page": 20 },
+      "morph": ["zu", "sätz", "-lich"],
+      "morphNote": "der Zusatz (kiegészítés, adalék) + -lich, umlauttal. Melléknév (zusätzliche Kosten) és határozó (zusätzlich – ráadásul). zusätzlich zu + Dat.",
+      "family": [
+        { "de": "der Zusatz", "hu": "kiegészítés, adalék", "known": false },
+        { "de": "der Satz", "hu": "mondat; tétel", "known": true },
+        { "de": "hinzufügen", "hu": "hozzáad", "known": false },
+        { "de": "der Zuschlag", "hu": "pótdíj", "known": false },
+        { "de": "außerdem", "hu": "ezenkívül", "known": true }
+      ],
+      "contrast": { "de": "außerdem", "hu": "ezenkívül",
+        "note": "zusätzlich = melléknév és határozó: további, ráadásul – mennyiséget told hozzá. außerdem = kötőszószerű határozó: ezenkívül – érvet told hozzá.",
+        "items": [
+          { "sentence": "Wir brauchen ___ Ressourcen.", "answer": "target", "form": "zusätzliche" },
+          { "sentence": "Es ist spät, ___ regnet es.", "answer": "contrast", "form": "außerdem" }
+        ] },
+      "mnemonics": [
+        "Zu-satz = „hozzá-tett”: ami hozzá van téve, az zusätzlich.",
+        "zusätzlich ~ zu + Satz: még egy tétel a listához."
+      ]
+    },
+    {
+      "id": "w36", "de": "Tauschhandel", "article": "der", "plural": "–", "pos": "noun",
+      "hu": "cserekereskedelem", "subdeck": "Fachwortschatz",
+      "collocation": "csak egyes számban · angolul: barter",
+      "context": { "sentence": "Wenn du Güter direkt gegeneinander eintauschst, ist das ein sogenannter Tauschhandel.", "highlight": "Tauschhandel", "page": 21 },
+      "morph": ["Tausch", "handel"],
+      "morphNote": "Tausch (csere) + Handel (kereskedelem). Angolul barter. Csak egyes számban.",
+      "family": [
+        { "de": "tauschen", "hu": "cserél", "known": false },
+        { "de": "der Tausch", "hu": "csere", "known": false },
+        { "de": "der Handel", "hu": "kereskedelem", "known": true },
+        { "de": "handeln", "hu": "kereskedik; cselekszik", "known": true },
+        { "de": "der Einzelhandel", "hu": "kiskereskedelem", "known": true }
+      ],
+      "contrast": { "de": "Handel", "article": "der", "hu": "kereskedelem",
+        "note": "Tauschhandel = pénz nélküli csere, áru áruért. Handel = kereskedelem általában, pénzzel.",
+        "items": [
+          { "sentence": "Vor der Erfindung des Geldes gab es nur ___.", "answer": "target", "form": "Tauschhandel" },
+          { "sentence": "Der ___ zwischen den Ländern wächst.", "answer": "contrast", "form": "Handel" }
+        ] },
+      "mnemonics": [
+        "Tausch + Handel: csere-kereskedelem – szó szerint ugyanaz.",
+        "Tauschhandel = „hal a ruháért”: pénz nélkül, egymásért."
+      ]
+    },
+    {
+      "id": "w37", "de": "tauschen", "pos": "verb", "praet": "tauschte", "perf": "hat getauscht",
+      "valence": "etw. (Akk.) gegen + Akk.", "hu": "cserél", "subdeck": "Fachwortschatz",
+      "context": { "sentence": "Die Menschen können ihre Überschüsse tauschen, um alle anderen Dinge zu bekommen, die sie brauchen.", "highlight": "tauschen", "page": 21 },
+      "morph": ["tausch", "-en"],
+      "morphNote": "Vonzat: etwas gegen etwas tauschen. Igekötős testvérek: eintauschen (becserél), austauschen (kicserél; eszmét cserél), umtauschen (visszacserél boltban), vertauschen (összecserél).",
+      "family": [
+        { "de": "der Tausch", "hu": "csere", "known": false },
+        { "de": "eintauschen", "hu": "becserél", "known": false },
+        { "de": "austauschen", "hu": "kicserél; eszmét cserél", "known": false },
+        { "de": "umtauschen", "hu": "kicserél (boltban)", "known": false },
+        { "de": "vertauschen", "hu": "összecserél, felcserél", "known": false }
+      ],
+      "contrast": { "de": "täuschen", "hu": "megtéveszt, becsap",
+        "note": "tauschen (au) = cserél. täuschen (äu) = megtéveszt, becsap. Egy umlaut a különbség – a pöttyök becsapnak.",
+        "items": [
+          { "sentence": "Ich ___ meinen Fisch gegen dein Hemd.", "answer": "target", "form": "tausche" },
+          { "sentence": "Der erste Eindruck kann ___.", "answer": "contrast", "form": "täuschen" }
+        ] },
+      "mnemonics": [
+        "tauschen ~ „tusa”: csere-tusa, ki mit ad kiért.",
+        "tauschen (au) – täuschen (äu): a pöttyök becsapnak."
+      ]
+    },
+    {
+      "id": "w38", "de": "gegeneinander", "pos": "adv",
+      "hu": "egymással, egymás ellen; egymásra (cserél)", "subdeck": "Allgemein",
+      "context": { "sentence": "Wenn du Güter direkt gegeneinander eintauschst, ist das ein sogenannter Tauschhandel.", "highlight": "gegeneinander", "page": 21 },
+      "morph": ["gegen", "einander"],
+      "morphNote": "gegen (ellen; -ért cserében) + einander (egymás). Ugyanígy: miteinander, voneinander, füreinander, nebeneinander. A könyvben: gegeneinander eintauschen – egymásra cserél.",
+      "family": [
+        { "de": "gegen", "hu": "ellen; -ért (csere)", "known": true },
+        { "de": "einander", "hu": "egymás", "known": false },
+        { "de": "miteinander", "hu": "egymással", "known": false },
+        { "de": "voneinander", "hu": "egymástól", "known": false },
+        { "de": "nebeneinander", "hu": "egymás mellett", "known": false }
+      ],
+      "contrast": { "de": "miteinander", "hu": "egymással (együtt)",
+        "note": "gegeneinander = egymás ellen, vagy egymásra cserélve (X gegen Y). miteinander = egymással, együtt.",
+        "items": [
+          { "sentence": "Die zwei Teams spielen heute ___.", "answer": "target", "form": "gegeneinander" },
+          { "sentence": "Die zwei Teams trainieren jetzt ___.", "answer": "contrast", "form": "miteinander" }
+        ] },
+      "mnemonics": [
+        "gegen + einander: „egymás ellenében” – ami egyik a másikért megy.",
+        "-einander sorozat: mit-, von-, für-, gegen-: mindig „egymás…”."
+      ]
+    },
+    {
+      "id": "w39", "de": "sogenannt", "pos": "adj", "forms": "ragozódik: der sogenannte, ein sogenannter · rövidítés: sog.",
+      "hu": "úgynevezett", "subdeck": "Allgemein",
+      "context": { "sentence": "Wenn du Güter direkt gegeneinander eintauschst, ist das ein sogenannter Tauschhandel.", "highlight": "sogenannter", "page": 21 },
+      "morph": ["so", "genannt"],
+      "morphNote": "so (így) + genannt (nevezett – a nennen Partizipja): „így nevezett”. Egybeírva melléknév: úgynevezett. Külön írva (so genannt): hangsúlyos „így nevezett”.",
+      "family": [
+        { "de": "nennen", "hu": "nevez", "known": false },
+        { "de": "genannt", "hu": "nevezett", "known": false },
+        { "de": "der Name", "hu": "név", "known": true },
+        { "de": "benennen", "hu": "elnevez", "known": false }
+      ],
+      "contrast": { "de": "angeblich", "hu": "állítólagos",
+        "note": "sogenannt = úgynevezett – semleges címke, szakszó bevezetése (néha ironikus). angeblich = állítólagos – kétely, hogy igaz-e.",
+        "items": [
+          { "sentence": "Das ist der ___ Tauschhandel.", "answer": "target", "form": "sogenannte" },
+          { "sentence": "Der ___ Experte hatte keine Ahnung.", "answer": "contrast", "form": "angebliche" }
+        ] },
+      "mnemonics": [
+        "so + genannt = „így nevezett” – úgynevezett, szó szerint.",
+        "sogenannt = „sog.” – a németek is lerövidítik, mint mi az „ún.”-t."
+      ]
+    },
+    {
+      "id": "w40", "de": "freiwillig", "pos": "adj", "forms": "freiwillig – freiwilliger – am freiwilligsten",
+      "hu": "önkéntes, önként", "subdeck": "Allgemein",
+      "context": { "sentence": "Ein Tausch ist nur dann von Vorteil, wenn beide Seiten freiwillig mitmachen.", "highlight": "freiwillig", "page": null },
+      "morph": ["frei", "will", "-ig"],
+      "morphNote": "frei (szabad) + Wille (akarat) + -ig: szabad akaratból. Főnév: der/die Freiwillige – önkéntes. Ellentéte: unfreiwillig – kényszerű, akaratlan.",
+      "family": [
+        { "de": "frei", "hu": "szabad", "known": true },
+        { "de": "der Wille", "hu": "akarat", "known": false },
+        { "de": "wollen", "hu": "akar", "known": true },
+        { "de": "der/die Freiwillige", "hu": "önkéntes", "known": false },
+        { "de": "unfreiwillig", "hu": "kényszerű, akaratlan", "known": false }
+      ],
+      "contrast": { "de": "bereitwillig", "hu": "készséges(en)",
+        "note": "freiwillig = önként, kényszer nélkül. bereitwillig = készségesen, szívesen – a hozzáállásról szól.",
+        "items": [
+          { "sentence": "Er hat ___ auf seinen Anteil verzichtet.", "answer": "target", "form": "freiwillig" },
+          { "sentence": "Sie hat uns ___ geholfen.", "answer": "contrast", "form": "bereitwillig" }
+        ] },
+      "mnemonics": [
+        "frei + Wille: „szabad akarat” – önkéntes.",
+        "Freiwillige = önkéntesek: akik a saját Wille-jükből jönnek."
+      ]
+    },
+    {
+      "id": "w41", "de": "basteln", "pos": "verb", "praet": "bastelte", "perf": "hat gebastelt",
+      "valence": "etw. (Akk.) · an + Dat. basteln – ügyködik vmin", "hu": "barkácsol, kézzel készít", "subdeck": "Allgemein",
+      "context": { "sentence": "Du hast versprochen, dass du mir eine Puppe bastelst!", "highlight": "bastelst", "page": 16 },
+      "morph": ["bast", "-eln"],
+      "morphNote": "-eln igeképző: apró, ismétlődő tevékenység (lächeln, kritzeln, basteln). Kézzel ügyeskedik, hobbi szinten. an + Dat.: an einem Projekt basteln – bütyköl rajta.",
+      "family": [
+        { "de": "der Bastler", "hu": "barkácsoló", "known": false },
+        { "de": "die Bastelei", "hu": "bütykölés", "known": false },
+        { "de": "bauen", "hu": "épít", "known": true },
+        { "de": "herstellen", "hu": "gyárt, előállít", "known": true },
+        { "de": "werkeln", "hu": "bütyköl", "known": false }
+      ],
+      "contrast": { "de": "bauen", "hu": "épít",
+        "note": "basteln = kézzel, kicsiben, hobbiként készít (Puppe, Modell). bauen = épít, konstruál (Haus, Zaun, Maschine).",
+        "items": [
+          { "sentence": "Die Kinder ___ eine Puppe aus Stoff.", "answer": "target", "form": "basteln" },
+          { "sentence": "Sie ___ einen Zaun aus Stöcken.", "answer": "contrast", "form": "bauen" }
+        ] },
+      "mnemonics": [
+        "basteln ~ „bütyköl”: b-b-b, ugyanaz a hangulat.",
+        "-eln = kicsiben csinálja: basteln, kritzeln, lächeln."
+      ]
+    },
+    {
+      "id": "w42", "de": "retten vor", "short": "retten", "pos": "verb", "praet": "rettete", "perf": "hat gerettet",
+      "valence": "jmdn. (Akk.) vor + Dat.", "hu": "megment (valamitől)", "subdeck": "Allgemein",
+      "context": { "sentence": "Rationierungen retteten viele Menschen vor dem Verhungern.", "highlight": "retteten", "page": 11 },
+      "morph": ["rett", "-en"],
+      "morphNote": "Vonzat: vor + Dat. (mitől). Főnév: die Rettung; der Rettungswagen – mentőautó. Visszahatóan: sich retten vor – megmenekül vmitől.",
+      "family": [
+        { "de": "die Rettung", "hu": "megmentés, mentés", "known": false },
+        { "de": "der Rettungswagen", "hu": "mentőautó", "known": false },
+        { "de": "der Retter", "hu": "megmentő", "known": false },
+        { "de": "sich retten", "hu": "megmenekül", "known": false },
+        { "de": "bewahren vor", "hu": "megóv vmitől", "known": false }
+      ],
+      "contrast": { "de": "bewahren vor", "hu": "megóv valamitől",
+        "note": "retten vor = már fennálló veszélyből kiment. bewahren vor = megóv, hogy a baj be se következzen.",
+        "items": [
+          { "sentence": "Die Feuerwehr ___ das Kind vor den Flammen.", "answer": "target", "form": "rettete" },
+          { "sentence": "Gute Planung ___ uns vor Fehlern.", "answer": "contrast", "form": "bewahrt" }
+        ] },
+      "mnemonics": [
+        "retten ~ Rettungswagen: a mentő ment – retten = ment.",
+        "retten VOR: „megment vmi elől” – a vor a veszélyre mutat."
+      ]
+    },
+    {
+      "id": "w43", "de": "Beute", "article": "die", "plural": "–", "pos": "noun",
+      "hu": "zsákmány", "subdeck": "Allgemein",
+      "collocation": "csak egyes számban · Beute machen – zsákmányt ejt",
+      "context": { "sentence": "Die Jäger kamen mit leeren Händen, ohne Beute zurück.", "highlight": "Beute", "page": null },
+      "morph": ["Beute"],
+      "morphNote": "Vadászat és bűnügy szava. erbeuten – zsákmányol; das Beutetier – zsákmányállat. Ne keverd: der Beutel – zacskó, erszény.",
+      "family": [
+        { "de": "erbeuten", "hu": "zsákmányol", "known": false },
+        { "de": "das Beutetier", "hu": "zsákmányállat", "known": false },
+        { "de": "die Jagd", "hu": "vadászat", "known": false },
+        { "de": "der Raub", "hu": "rablás", "known": false },
+        { "de": "der Beutel", "hu": "zacskó, erszény (más szó!)", "known": false }
+      ],
+      "contrast": { "de": "Beutel", "article": "der", "hu": "zacskó, erszény",
+        "note": "die Beute = zsákmány. der Beutel = zacskó, erszény (Geldbeutel). Egy betű és a névelő a különbség.",
+        "items": [
+          { "sentence": "Der Wolf schleppte seine ___ in den Wald.", "answer": "target", "form": "Beute" },
+          { "sentence": "Ich habe meinen ___ mit dem Geld verloren.", "answer": "contrast", "form": "Beutel" }
+        ] },
+      "mnemonics": [
+        "Beute ~ „bő étel”: a zsákmány bő étel a vadásznak.",
+        "Beute (zsákmány) – Beutel (zacskó): a zsákmány a zacskóba kerül."
+      ]
+    },
+    {
+      "id": "w44", "de": "kaum", "pos": "adv", "forms": "tagadó értelmű – nem áll mellette nicht · kaum noch – már alig",
+      "hu": "alig", "subdeck": "Allgemein",
+      "context": { "sentence": "Diese Aussage kann man mit Daten kaum belegen.", "highlight": "kaum", "page": null },
+      "morph": ["kaum"],
+      "morphNote": "Tagadó értelmű határozó, ezért nem áll mellette nicht. kaum noch – már alig; kaum jemand – szinte senki; kaum … da – alighogy …, máris.",
+      "family": [
+        { "de": "kaum noch", "hu": "már alig", "known": false },
+        { "de": "kaum jemand", "hu": "szinte senki", "known": false },
+        { "de": "knapp", "hu": "szűkös; (szám előtt) alig", "known": true },
+        { "de": "selten", "hu": "ritkán", "known": true },
+        { "de": "fast nicht", "hu": "majdnem nem", "known": true }
+      ],
+      "contrast": { "de": "knapp", "hu": "épphogy, szűken",
+        "note": "kaum = alig, szinte nem (Ich kann es kaum glauben). knapp = épphogy, szűken, de sikerült – szám előtt: knapp 20 Minuten.",
+        "items": [
+          { "sentence": "Ich kann es ___ glauben.", "answer": "target", "form": "kaum" },
+          { "sentence": "Wir haben den Zug ___ erreicht.", "answer": "contrast", "form": "knapp" }
+        ] },
+      "mnemonics": [
+        "kaum ~ „kóma”: aki kómában van, alig mozdul.",
+        "kaum = alig, nicht nélkül – a kaum már magában tagad."
+      ]
+    }
+  ],
+  "batches": [
+    {
+      "title": "1. kör – Szükséglet és erőforrás",
+      "words": ["w01", "w02", "w03", "w04", "w05"],
+      "story": {
+        "de": "Unsere frühen Vorfahren hatten ein einfaches Bedürfnis: genug zu essen. Alles um sie herum war eine mögliche Ressource – Fische, Beeren, Holz. Heute brauchen wir viele verschiedene Arten von Ressourcen, die sie noch nicht kannten. Ein Bauer streut Dünger auf sein Feld, damit die Ernte größer wird. Das Bedürfnis nach Nahrung ist geblieben, nur die Mittel haben sich verändert.",
+        "highlights": ["Vorfahren", "Bedürfnis", "um sie herum", "Arten", "Dünger"],
+        "hu_outline": [
+          "Őseinknek egyszerű szükségletük volt: elég ennivaló.",
+          "Minden, ami körülöttük volt, lehetséges erőforrás volt.",
+          "Ma sokféle erőforrásra van szükségünk, amit ők nem ismertek.",
+          "A gazda műtrágyát szór a földjére, hogy nagyobb legyen a termés.",
+          "Az élelem iránti szükséglet maradt, csak az eszközök változtak."
+        ]
+      }
+    },
+    {
+      "title": "2. kör – Az alternatívaköltség",
+      "words": ["w06", "w07", "w08", "w09", "w10"],
+      "story": {
+        "de": "Am Abend wollte Tom mit dem letzten Holz ein Feuer machen. Der Verbrauch dieses Holzes hatte einen Preis: Er konnte damit keine Trommel mehr bauen. Auf die Trommel musste er nämlich verzichten. Tom nahm diese Möglichkeit nicht wahr, und der Traum von der Trommel wurde nie verwirklicht. Ökonomen nennen die nicht verwirklichten Möglichkeiten Opportunitätskosten.",
+        "highlights": ["Verbrauch", "nämlich", "verzichten", "nahm", "wahr", "verwirklicht"],
+        "hu_outline": [
+          "Este Tom az utolsó fával tüzet akart rakni.",
+          "Ennek a fának a felhasználása ára volt: nem építhetett belőle dobot.",
+          "A dobról ugyanis le kellett mondania.",
+          "Tom nem élt ezzel a lehetőséggel, a dob álma sosem valósult meg.",
+          "A közgazdászok a meg nem valósult lehetőségeket alternatívaköltségnek nevezik."
+        ]
+      }
+    },
+    {
+      "title": "3. kör – Idő és döntés",
+      "words": ["w11", "w12", "w13", "w14", "w15"],
+      "story": {
+        "de": "Tom hatte nur eine Stunde Zeit. Er konnte sie für die Jagd einsetzen oder nutzen, um einen Zaun zu bauen. Jede Wahl geht mit Kosten einher – die Ökonomen sprechen hier von Opportunitätskosten. Tom entschied sich für den kurzfristigen Gewinn: Er ging jagen und brachte ein Kaninchen nach Hause. Der Zaun blieb ungebaut, und der Tiger kam in der Nacht zurück.",
+        "highlights": ["einsetzen", "nutzen", "geht mit Kosten einher", "sprechen hier von", "kurzfristigen"],
+        "hu_outline": [
+          "Tomnak csak egy órája volt.",
+          "Vadászatra fordíthatta, vagy kerítést építhetett belőle.",
+          "Minden választás költséggel jár – a közgazdászok alternatívaköltségről beszélnek.",
+          "Tom a rövid távú nyereséget választotta: vadászni ment, nyulat hozott.",
+          "A kerítés nem épült meg, és éjjel visszajött a tigris."
+        ]
+      }
+    },
+    {
+      "title": "4. kör – Haszon",
+      "words": ["w16", "w17", "w18", "w19", "w20"],
+      "story": {
+        "de": "Lena sammelte Pilze, ihr Bruder ging lieber auf die Jagd. Für Lena hatten die Pilze einen großen Nutzen, für ihn fast keinen – die Nützlichkeit einer Sache ist eben für jeden anders. Am Nachmittag traf der Bruder eine unerwartete Entscheidung: Er lief nicht weg, sondern lockte den Tiger vom Vater weg. Kurzfristig war das gefährlich, langfristig rettete es die Familie.",
+        "highlights": ["Jagd", "Nutzen", "Nützlichkeit", "unerwartete", "langfristig"],
+        "hu_outline": [
+          "Lena gombát szedett, a bátyja inkább vadászni ment.",
+          "Lenának a gomba nagy haszon volt, a bátyjának szinte semmi – a hasznosság mindenkinek más.",
+          "Délután a báty váratlan döntést hozott: nem futott el, hanem elcsalta a tigrist az apjától.",
+          "Rövid távon veszélyes volt, hosszú távon megmentette a családot."
+        ]
+      }
+    },
+    {
+      "title": "5. kör – Termelés",
+      "words": ["w21", "w22", "w23", "w24", "w25"],
+      "story": {
+        "de": "Was ist eigentlich Produktion? Die Ökonomen teilen den Prozess in vier Abschnitte ein: Idee, Ressourcen, Arbeit, Kapital. Alles, was dabei getan wird, wird als Arbeit bezeichnet. Diese Arbeit umfasst nicht nur das Schleppen von Holz. Auch das Planen und Organisieren ist eine Betätigung, die zur Herstellung notwendig ist. Wer den Zaun nur ausdenkt, arbeitet also auch.",
+        "highlights": ["Abschnitte", "als Arbeit bezeichnet", "umfasst", "Betätigung"],
+        "hu_outline": [
+          "Mi is a termelés? A közgazdászok négy szakaszra osztják: ötlet, erőforrás, munka, tőke.",
+          "Mindent, amit közben tesznek, munkának neveznek.",
+          "Ez a munka nem csak a fa cipelését foglalja magában.",
+          "A tervezés és a szervezés is olyan tevékenység, ami az előállításhoz kell.",
+          "Aki csak kitalálja a kerítést, az is dolgozik."
+        ]
+      }
+    },
+    {
+      "title": "6. kör – Hatékonyság",
+      "words": ["w26", "w27", "w28", "w29", "w30"],
+      "story": {
+        "de": "Lena hatte eine neue Idee: einen Zaun aus Stöcken. Aber die Stöcke waren nicht besonders stabil. Also erfand sie ein Werkzeug, mit dem man Knoten schneller binden konnte. Jetzt schaffte sie zwanzig Knoten in einer Stunde – die Familie arbeitete viel effizienter. Werkzeuge, sagte Lena, sind die Grundlage jeder guten Produktion.",
+        "highlights": ["besonders", "erfand", "schaffte", "effizienter", "Grundlage"],
+        "hu_outline": [
+          "Lenának új ötlete volt: kerítés botokból.",
+          "De a botok nem voltak különösebben stabilak.",
+          "Ezért feltalált egy szerszámot, amivel gyorsabban lehet csomót kötni.",
+          "Most húsz csomót csinált meg egy óra alatt – a család sokkal hatékonyabban dolgozott.",
+          "A szerszámok – mondta Lena – minden jó termelés alapja."
+        ]
+      }
+    },
+    {
+      "title": "7. kör – Specializáció",
+      "words": ["w31", "w32", "w33", "w34", "w35"],
+      "story": {
+        "de": "In der Familie spezialisierte sich jeder auf eine Aufgabe: Tom fischte, Lena nähte, die Großmutter passte auf die Kinder auf. Die Ökonomen nennen das Spezialisierung. Wer nur eine Sache macht, wird schneller – und produziert mehr, als er selbst braucht. Diese zusätzliche Produktion ist der Überschuss. Tom hatte bald mehr Fische, als er essen konnte, und die Großmutter bot etwas an, das man nicht anfassen kann: eine Dienstleistung.",
+        "highlights": ["spezialisierte sich", "nennen", "zusätzliche", "Überschuss", "Dienstleistung"],
+        "hu_outline": [
+          "A családban mindenki egy feladatra szakosodott: Tom halászott, Lena varrt, a nagymama a gyerekekre vigyázott.",
+          "A közgazdászok ezt specializációnak nevezik.",
+          "Aki csak egy dolgot csinál, gyorsabb lesz, és többet termel, mint amennyi neki kell.",
+          "Ez a többlettermelés a többlet.",
+          "Tomnak hamar több hala lett, mint amennyit meg tudott enni; a nagymama pedig valami megfoghatatlant kínált: szolgáltatást."
+        ]
+      }
+    },
+    {
+      "title": "8. kör – Csere",
+      "words": ["w36", "w37", "w38", "w39", "w40"],
+      "story": {
+        "de": "Tom hatte zu viele Fische, Lena zu viele Hemden. Also tauschten sie: drei Fische gegen ein Hemd. Wenn man Güter so direkt gegeneinander eintauscht, nennt man das Tauschhandel – den sogenannten Barter. Beide machten freiwillig mit, denn beide hatten danach mehr Nutzen als vorher. So funktionierte Handel, lange bevor es Geld gab.",
+        "highlights": ["tauschten", "gegeneinander", "Tauschhandel", "sogenannten", "freiwillig"],
+        "hu_outline": [
+          "Tomnak túl sok hala volt, Lenának túl sok inge.",
+          "Így cseréltek: három hal egy ingért.",
+          "Ha a javakat közvetlenül egymásra cserélik, azt cserekereskedelemnek nevezik – az úgynevezett barternek.",
+          "Mindketten önként vettek részt, mert utána mindkettőjüknek nagyobb haszna volt.",
+          "Így működött a kereskedelem, jóval a pénz előtt."
+        ]
+      }
+    },
+    {
+      "title": "9. kör – Vadászat és mentés",
+      "words": ["w41", "w42", "w43", "w44"],
+      "story": {
+        "de": "Tom bastelte den ganzen Abend an einer Falle. Am Morgen ging er auf die Jagd, kam aber ohne Beute zurück – es gab kaum noch Tiere im Wald. Dann fand er die Falle voll: drei Hasen. Diese Beute rettete die Familie vor einem hungrigen Winter.",
+        "highlights": ["bastelte", "Beute", "kaum", "rettete"],
+        "hu_outline": [
+          "Tom egész este egy csapdán bütykölt.",
+          "Reggel vadászni ment, de zsákmány nélkül tért vissza – alig maradt állat az erdőben.",
+          "Aztán a csapdát tele találta: három nyúl.",
+          "Ez a zsákmány megmentette a családot egy éhes téltől."
+        ]
+      }
+    }
+  ]
+}

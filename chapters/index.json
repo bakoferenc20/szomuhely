@@ -1,0 +1,12 @@
+[
+  {
+    "id": "wirtschaft-01",
+    "title": "Bevezetés: Was bedeutet Wirtschaft?",
+    "file": "chapters/wirtschaft-01.json"
+  },
+  {
+    "id": "wirtschaft-02",
+    "title": "1. Kapitel: Nicht genug für alle",
+    "file": "chapters/wirtschaft-02.json"
+  }
+]
